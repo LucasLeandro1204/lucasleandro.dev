@@ -17,13 +17,24 @@ nav {
 
     i {
       transition: .6s;
+
+      &.fa-twitter {
+        color: #1da1f2
+      }
+
+      &.fa-github {
+        color: #24292e;
+      }
+
+      &.fa-envelope {
+        color: #dc4835;
+      }
     }
 
     &:hover,
     &:focus {
 
       i {
-        color: $yellow;
         transform: rotate(360deg) scale(1.2);
       }
     }
