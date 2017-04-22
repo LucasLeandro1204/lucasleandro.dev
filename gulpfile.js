@@ -64,8 +64,7 @@ gulp.task('browser-sync', () => {
   browserSync.init(null, {
     server: {
       baseDir: paths.public,
-    },
-    files: [paths.public + '/**/*']
+    }
   });
 });
 
