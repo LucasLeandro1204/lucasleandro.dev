@@ -74,6 +74,5 @@ gulp.task('watch', ['clean', 'sass', 'images', 'scripts', 'views', 'browser-sync
   gulp.watch(paths.src + '/sass/**/*.scss', ['sass']);
   gulp.watch(paths.src + '/scripts/*.js', ['scripts']);
   gulp.watch(paths.src + '/views/**/*.pug', ['views']);
-  gulp.watch(paths.src + '/views/**/*.md', ['views']);
   gulp.watch(paths.src + '/images/**/*', ['images']);
 });

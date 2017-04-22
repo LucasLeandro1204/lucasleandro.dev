@@ -13,10 +13,12 @@ nav {
 
   a {
     font-size: 26px;
-    margin: 0 15px;
+    margin: 0 5px;
 
     i {
-      transition: .6s;
+      padding: 5px 8px;
+      border-radius: 3px;
+      transition: .3s;
 
       &.fa-twitter {
         color: #1da1f2
@@ -33,9 +35,20 @@ nav {
 
     &:hover,
     &:focus {
-
       i {
-        transform: rotate(360deg) scale(1.2);
+        color: #ffffff;
+
+        &.fa-twitter {
+          background-color: #1da1f2
+        }
+
+        &.fa-github {
+           background-color: #24292e;
+        }
+
+        &.fa-envelope {
+           background-color: #dc4835;
+        }
       }
     }
   }
