@@ -52,7 +52,8 @@ gulp.task('views', () => {
       !/\/_/.test(file.path) && !/^_/.test(file.relative)
     )))
     .pipe(pug())
-    .pipe(gulp.dest(paths.public));
+    .pipe(gulp.dest(paths.public))
+    .pipe(browserSync.reload({ stream: true, once: true }));
 });
 
 gulp.task('images', () => {
