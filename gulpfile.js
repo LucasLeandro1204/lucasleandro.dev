@@ -24,9 +24,10 @@ gulp.task('sass', () => {
     .pipe(filter(file => (
       !/\/_/.test(file.path) && !/^_/.test(file.relative)
     )))
-    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest(paths.build + '/styles'))
+    .pipe(sass().on('error', sass.logError))
+    //.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    //.pipe(rename({ suffix: '.min' }))
+    //.pipe(gulp.dest(paths.build + '/styles'))
     .pipe(browserSync.reload({ stream: true }));
 });
 
@@ -39,8 +40,8 @@ gulp.task('scripts', () => {
     .pipe(browserify({
       insertGlobals : true
     }))
-    .pipe(uglify())
-    .pipe(rename({ suffix: '.min' }))
+    //.pipe(uglify())
+    //.pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest(paths.build + '/scripts'))
     .pipe(browserSync.reload({ stream: true, once: true }));
 });
