@@ -1,3 +1,3 @@
 # Lucas Leandro
 
-Sempre tentando ser melhor, e não ser o melhor.
+Always trying to be a better person, not the best.
