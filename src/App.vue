@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div class="p-8 bg-black" id="app">
   </div>
 </template>
 
@@ -15,7 +15,7 @@
   };
 </script>
 
-<style>
+<style lang="postcss">
 
 /**
  * This injects Tailwind's base styles, which is a combination of
