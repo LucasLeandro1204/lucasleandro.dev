@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <header class="absolute pin-r">
+    <header class="absolute pin-r p-3">
       <nav>
         <ul>
           <router-link
@@ -8,7 +8,7 @@
             :to="route.path"
             v-for="route in routes">
             <a
-              class="text-black px-6 text-2xl"
+              class="text-black px-3 text-2xl"
               v-text="route.meta.title"></a>
           </router-link>
         </ul>
