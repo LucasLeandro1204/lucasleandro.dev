@@ -1,13 +1,22 @@
 <template>
-  <div class="p-8 bg-black" id="app">
+  <div id="app">
+    <header>
+
+    </header>
+
+    <router-view />
   </div>
 </template>
 
 <script>
+  import router from 'core/router';
+
   export default {
     components: {
       //
     },
+
+    router,
 
     mounted () {
       document.dispatchEvent(new Event('render-event'));
