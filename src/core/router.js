@@ -11,10 +11,16 @@ export default new VueRouter({
   routes: [
     {
       path: '/',
+      meta: {
+        title: 'Home',
+      },
       component: Home,
     },
     {
       path: '/projetos',
+      meta: {
+        title: 'Projetos',
+      },
       component: Project,
     },
   ],

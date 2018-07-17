@@ -1,7 +1,18 @@
 <template>
   <div id="app">
-    <header>
-
+    <header class="absolute pin-r">
+      <nav>
+        <ul>
+          <router-link
+            :key="route.path"
+            :to="route.path"
+            v-for="route in routes">
+            <a
+              class="text-black px-6 text-2xl"
+              v-text="route.meta.title"></a>
+          </router-link>
+        </ul>
+      </nav>
     </header>
 
     <router-view />
@@ -17,6 +28,12 @@
     },
 
     router,
+
+    computed: {
+      routes () {
+        return this.$router.options.routes;
+      },
+    },
 
     mounted () {
       document.dispatchEvent(new Event('render-event'));
