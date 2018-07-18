@@ -1,6 +1,6 @@
 <template>
   <div class="text-black" id="app">
-    <header class="absolute pin-r p-3">
+    <header class="absolute pin-r p-3 invisible">
       <nav>
         <ul>
           <router-link
