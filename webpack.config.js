@@ -11,7 +11,7 @@ const isProd = process.env.NODE_ENV === 'production';
 module.exports = {
   entry: './src/app.js',
   output: {
-    path: path.resolve(__dirname, './public'),
+    path: path.resolve(__dirname, './docs'),
     filename: 'js/app.js'
   },
   module: {
@@ -141,7 +141,7 @@ if (isProd) {
 
     new PrerenderSPAPlugin({
 
-      staticDir: path.join(__dirname, 'public'),
+      staticDir: path.join(__dirname, 'docs'),
 
       routes: [ '/' ],
 
