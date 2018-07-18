@@ -11,7 +11,7 @@ const isProd = process.env.NODE_ENV === 'production';
 module.exports = {
   entry: './src/app.js',
   output: {
-    path: path.resolve(__dirname, './docs'),
+    path: path.resolve(__dirname, './public'),
     filename: 'js/app.js'
   },
   module: {
@@ -78,13 +78,6 @@ module.exports = {
           name: '[name].[ext]?[hash]',
         },
       },
-      {
-        test: /\.(otf|woff)$/,
-        loader: 'file-loader',
-        options: {
-          name: 'fonts/[name].[ext]?[hash]'
-        }
-      },
     ]
   },
   resolve: {
@@ -108,7 +101,7 @@ module.exports = {
   devtool: '#eval-source-map',
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'src/index.html',
+      template: 'index.html',
     }),
 
     new ScriptExtHtmlWebpackPlugin({
@@ -139,36 +132,36 @@ if (isProd) {
 
     require('./purgecss.plugin'),
 
-    new PrerenderSPAPlugin({
+    // new PrerenderSPAPlugin({
 
-      staticDir: path.join(__dirname, 'docs'),
+    //   staticDir: path.join(__dirname),
 
-      routes: [ '/' ],
+    //   routes: [ '/' ],
 
-      minify: {
-        collapseBooleanAttributes: true,
-        collapseWhitespace: true,
-        decodeEntities: true,
-        keepClosingSlash: true,
-        sortAttributes: true
-      },
+    //   minify: {
+    //     collapseBooleanAttributes: true,
+    //     collapseWhitespace: true,
+    //     decodeEntities: true,
+    //     keepClosingSlash: true,
+    //     sortAttributes: true
+    //   },
 
-      postProcess (rendered) {
-        /**
-         * Content that don't get rendered.
-         */
-        rendered.html = rendered.html.replace(/<!--#prod([\s\S]*)!-->/gm, '$1');
+    //   postProcess (rendered) {
+    //     /**
+    //      * Content that don't get rendered.
+    //      */
+    //     rendered.html = rendered.html.replace(/<!--#prod([\s\S]*)!-->/gm, '$1');
 
-        return rendered;
-      },
+    //     return rendered;
+    //   },
 
-      renderer: new Renderer({
-        renderAfterDocumentEvent: 'render-event',
-        injectProperty: '__PRERENDER_INJECTED',
-        inject: {
-          hide: true,
-        },
-      })
-    }),
+    //   renderer: new Renderer({
+    //     renderAfterDocumentEvent: 'render-event',
+    //     injectProperty: '__PRERENDER_INJECTED',
+    //     inject: {
+    //       hide: true,
+    //     },
+    //   })
+    // }),
   ])
 }

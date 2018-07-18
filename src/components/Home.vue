@@ -1,6 +1,6 @@
 <template>
-  <main class="flex h-screen w-screen overflow-scroll">
-    <section class="h-screen text-white invisible left flex items-center justify-center absolute w-1/2 md:visible">
+  <main class="flex h-screen w-screen overflow-y-scroll">
+    <section class="h-screen text-white hidden left items-center justify-center w-1/2 md:flex">
       <h1 class="text-20xl xl:text-35xl font-black">Lucas <span class="block">Leandro</span></h1>
     </section>
     <section class="w-screen py-16 px-4 flex flex-col md:w-1/2 md:ml-auto md:px-16">
