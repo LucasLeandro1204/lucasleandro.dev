@@ -1,5 +1,5 @@
 <template>
-  <main class="flex h-screen w-screen">
+  <main class="flex h-screen w-screen overflow-scroll">
     <section class="h-screen text-white invisible left flex items-center justify-center absolute w-1/2 md:visible">
       <h1 class="text-20xl xl:text-35xl font-black">Lucas <span class="block">Leandro</span></h1>
     </section>
@@ -11,6 +11,7 @@
           > <a class="text-black" :href="link.to" v-text="link.title"></a>
         </li>
       </ul>
+      <p class="mt-8 font-light text-lg ml-auto md:mt-auto">Sempre tentando ser melhor, e não o melhor</p>
     </section>
   </main>
 </template>
