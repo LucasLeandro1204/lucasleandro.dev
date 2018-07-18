@@ -68,21 +68,21 @@ module.exports = {
         test: /\.(png|jpg|gif|svg|ico)$/,
         loader: 'file-loader',
         options: {
-          name: (isProd ? '/' : '') + 'images/[name].[ext]?[hash]'
+          name: 'images/[name].[ext]?[hash]'
         }
       },
       {
         test: /\.json$/,
         loader: 'file-loader',
         options: {
-          name: (isProd ? '/' : '') + '[name].[ext]?[hash]',
+          name: '[name].[ext]?[hash]',
         },
       },
       {
         test: /\.(otf|woff)$/,
         loader: 'file-loader',
         options: {
-          name: (isProd ? '/' : '') + 'fonts/[name].[ext]?[hash]'
+          name: 'fonts/[name].[ext]?[hash]'
         }
       },
     ]
@@ -108,7 +108,7 @@ module.exports = {
   devtool: '#eval-source-map',
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'index.html',
+      template: 'src/index.html',
     }),
 
     new ScriptExtHtmlWebpackPlugin({
