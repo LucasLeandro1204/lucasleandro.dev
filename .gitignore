@@ -1,5 +1,12 @@
-/node_modules
 .DS_Store
-.sass-cache
-.phpintel
-*.psd
+node_modules/
+npm-debug.log
+yarn-error.log
+public/
+
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln

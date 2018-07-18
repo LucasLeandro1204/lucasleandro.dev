@@ -1,0 +1,120 @@
+<template>
+  <div class="text-black" id="app">
+    <header class="absolute pin-r p-3 invisible">
+      <nav>
+        <ul>
+          <router-link
+            :key="route.path"
+            :to="route.path"
+            v-for="route in routes">
+            <a
+              class="text-black px-3 text-lg"
+              v-text="route.meta.title"></a>
+          </router-link>
+        </ul>
+      </nav>
+    </header>
+
+    <router-view />
+  </div>
+</template>
+
+<script>
+  import router from 'core/router';
+
+  export default {
+    components: {
+      //
+    },
+
+    router,
+
+    computed: {
+      routes () {
+        return this.$router.options.routes;
+      },
+    },
+
+    mounted () {
+      document.dispatchEvent(new Event('render-event'));
+    },
+  };
+</script>
+
+<style lang="postcss">
+
+/**
+ * This injects Tailwind's base styles, which is a combination of
+ * Normalize.css and some additional base styles.
+ *
+ * You can see the styles here:
+ * https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/preflight";
+ */
+@tailwind preflight;
+
+/**
+ * This injects any component classes registered by plugins.
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/components";
+ */
+@tailwind components;
+
+/**
+ * Here you would add any of your custom component classes; stuff that you'd
+ * want loaded *before* the utilities so that the utilities could still
+ * override them.
+ *
+ * Example:
+ *
+ * .btn { ... }
+ * .form-input { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "components/buttons";
+ * @import "components/forms";
+ */
+
+/**
+ * This injects all of Tailwind's utility classes, generated based on your
+ * config file.
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/utilities";
+ */
+@tailwind utilities;
+
+/**
+ * Here you would add any custom utilities you need that don't come out of the
+ * box with Tailwind.
+ *
+ * Example :
+ *
+ * .bg-pattern-graph-paper { ... }
+ * .skew-45 { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "utilities/background-patterns";
+ * @import "utilities/skew-transforms";
+ */
+
+  * {
+    font-family: 'Lato', sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  p {
+    line-height: 1.5;
+  }
+</style>
