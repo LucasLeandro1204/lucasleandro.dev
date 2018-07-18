@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div class="text-black" id="app">
     <header class="absolute pin-r p-3">
       <nav>
         <ul>
