@@ -1,5 +1,5 @@
 <template>
-  <app-main>
+  <app-main title="Lucas Leandro">
     <template slot="left">
       <h1>Projetos</h1>
     </template>

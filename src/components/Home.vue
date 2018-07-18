@@ -1,7 +1,7 @@
 <template>
-  <app-main>
-    <template slot="left">
-      <h1>Lucas Leandro</h1>
+  <app-main title="Lucas Leandro">
+    <template slot="right">
+      <p>Hey</p>
     </template>
   </app-main>
 </template>
