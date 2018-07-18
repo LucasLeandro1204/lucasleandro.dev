@@ -8,7 +8,7 @@
             :to="route.path"
             v-for="route in routes">
             <a
-              class="text-black px-3 text-2xl"
+              class="text-black px-3 text-lg"
               v-text="route.meta.title"></a>
           </router-link>
         </ul>
