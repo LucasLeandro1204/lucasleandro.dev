@@ -16,6 +16,7 @@
     "koa": "^2.5.2"
   },
   "devDependencies": {
+    "@nuxtjs/google-analytics": "^2.0.2",
     "@nuxtjs/sitemap": "^0.2.0",
     "autoprefixer": "^8.6.4",
     "glob-all": "^3.1.0",
