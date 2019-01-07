@@ -31,10 +31,15 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Lucas Leandro - Developer Freelance' },
+      { hid: 'description', name: 'description', content: 'I\`m a Freelance Developer. I solve problems.', },
       { name: 'msapplication-TileColor', content: '#ffffff' },
       { name: 'msapplication-TileImage', content: '/icon/ms-icon-144x144.png' },
       { name: 'theme-color', content: '#ffffff' },
+      { name: 'og:image', content: '/thumbnail.jpg' },
+      { name: 'og:title', content: 'Lucas Leandro Developer' },
+      { name: 'og:description', content: 'I\`m a Freelance Developer. I solve problems.' },
+      { name: 'og:url', content: 'https://lucasleandro1204.netlify.com' },
+      { name: 'og:type', content: 'website', },
     ],
     link: [
       { rel: 'apple-touch-icon', sizes: '57x57', href: '/icon/apple-icon-57x57.png', },
