@@ -3,7 +3,7 @@
     <nav class="text-right p-8">
       <ul class="list-reset">
         <li>
-          <a class="no-underline text-white px-4 py-2 rounded font-bold bg-grey-darkest" href="mailto:lucasleandro1204@gmail.com?subject=Hello Lucas">
+          <a class="no-underline text-white px-4 py-2 rounded bg-grey-darkest" href="mailto:lucasleandro1204@gmail.com?subject=Hello Lucas">
             Get in touch
           </a>
         </li>
