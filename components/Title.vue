@@ -3,7 +3,7 @@
     <span
       v-text="background"
       :class="light ? 'text-white' : 'text-grey-lighter'"
-      class="text-12xl select-none font-extrabold"
+      class="text-12xl select-none leading-none font-extrabold"
       >
     </span>
 
