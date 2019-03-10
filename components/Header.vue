@@ -33,17 +33,12 @@
 
 <script>
   export default {
-    props: {
-      fixed: {
-        type: Boolean,
-        required: false,
-        default: false,
-      },
-
-      links: {
-        type: Object,
-        required: true,
-      },
+    computed: {
+      links: () => ({
+        '#': 'HOME',
+        '#projects': 'PROJECTS',
+        'mailto:lucasleandro1204@gmail.com?subject=From Website: Hello Lucas': 'GET IN TOUCH',
+      }),
     },
   };
 </script>

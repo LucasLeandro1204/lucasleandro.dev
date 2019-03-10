@@ -1,7 +1,6 @@
 <template>
   <div class="font-sans text-black wrapper px-8">
     <AppHeader
-      :fixed="fixed"
       :links="links"
       />
   </div>
@@ -13,18 +12,6 @@
   export default {
     components: {
       AppHeader,
-    },
-
-    data: () => ({
-      fixed: false,
-    }),
-
-    computed: {
-      links: () => ({
-        '#': 'HOME',
-        '#projects': 'PROJECTS',
-        'mailto:lucasleandro1204@gmail.com?subject=From Website: Hello Lucas': 'GET IN TOUCH',
-      }),
     },
   };
 </script>
