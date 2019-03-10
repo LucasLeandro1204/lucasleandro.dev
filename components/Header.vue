@@ -30,8 +30,8 @@
         <nav class="ml-8">
           <ul class="flex list-reset">
             <li
-              :key="icon"
               class="mr-3"
+              :key="anchor"
               v-for="(icon, anchor) in social"
               >
 
@@ -56,11 +56,11 @@
   import IconTwitter from '~/assets/icon/twitter.svg';
 
   export default {
-    components: {
-      IconMail,
-      IconGitHub,
-      IconTwitter,
-    },
+    // components: {
+    //   IconMail,
+    //   IconGitHub,
+    //   IconTwitter,
+    // },
 
     computed: {
       links: () => ({
@@ -70,9 +70,9 @@
       }),
 
       social: () => ({
-        'https://twitter.com/lucasleandro412': 'IconTwitter',
-        'https://github.com/lucasleandro1204': 'IconGitHub',
-        'mailto:lucasleandro1204@gmail.com?subject=From Website: Hello Lucas': 'IconMail',
+        'https://twitter.com/lucasleandro412': IconMail,
+        'https://github.com/lucasleandro1204': IconGitHub,
+        'mailto:lucasleandro1204@gmail.com?subject=From Website: Hello Lucas': IconTwitter,
       }),
     },
   };
