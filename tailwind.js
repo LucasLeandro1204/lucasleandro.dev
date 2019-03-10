@@ -47,8 +47,8 @@ let colors = {
   'transparent': 'transparent',
 
   'black': '#22292f',
-  'grey-darkest': '#3d4852',
-  'grey-darker': '#606f7b',
+  'grey-darkest': '#4f4f4f',
+  'grey-darker': '#757677',
   'grey-dark': '#8795a1',
   'grey': '#b8c2cc',
   'grey-light': '#dae1e7',
@@ -538,6 +538,7 @@ module.exports = {
     '24': '6rem',
     '32': '8rem',
     '48': '12rem',
+    '56': '14rem',
     '64': '16rem',
     'full': '100%',
     'screen': '100vh'

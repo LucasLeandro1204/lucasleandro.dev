@@ -7,9 +7,9 @@
       />
 
     <Project
+      class="mt-20"
       v-bind="project"
       :key="project.title"
-      :class="{ 'mt-8': index > 0 }"
       v-for="(project, index) in projects"
       />
   </article>
@@ -32,6 +32,7 @@
         {
           logo: Convertpack,
           title: 'Convertpack',
+          link: 'https://convertpack.io',
           background: 'bg-gradient-blue',
           description: 'A package of tools to boost your sales',
           stack: [
@@ -42,6 +43,7 @@
           logo: Innbox,
           title: 'Innbox',
           background: 'bg-gradient-green',
+          link: 'https://innboxhostels.com.br',
           description: 'Hotel & Hostel website',
           stack: [
             'Nuxt',
