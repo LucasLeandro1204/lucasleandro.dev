@@ -1,8 +1,8 @@
 <template>
-  <div class="font-sans text-black wrapper px-8">
+  <div class="font-sans text-black wrapper px-8 pb-16">
     <AppHeader class="mt-4 mb-16" />
 
-    <About />
+    <About class="mb-16" />
 
     <Projects />
   </div>
