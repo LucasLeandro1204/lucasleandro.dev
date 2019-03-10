@@ -936,7 +936,21 @@ module.exports = {
   */
 
   plugins: [
-    //
+    ({ addUtilities }) => {
+      const utilities = {
+        '.bg-gradient-white': {
+          background: 'linear-gradient(180deg, #FFFFFF 0%, #F2F2F2 100%)',
+        },
+        '.bg-gradient-blue': {
+          background: 'radial-gradient(146.50px at 50% 50%, #256EFF 0%, #3D77EA 100%)',
+        },
+        '.bg-gradient-green': {
+          background: 'radial-gradient(146.50px at 50% 50%, #16E35F 0%, #21D05F 100%)',
+        },
+      };
+
+      addUtilities(utilities);
+    },
   ],
 
 

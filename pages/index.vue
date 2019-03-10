@@ -1,5 +1,5 @@
 <template>
-  <div class="font-sans text-black wrapper px-8 pb-16">
+  <div class="font-sans bg-gradient-white text-black min-h-screen px-8 pb-16">
     <AppHeader class="mt-4 mb-16" />
 
     <About class="mb-16" />
@@ -21,10 +21,3 @@
     },
   };
 </script>
-
-<style scoped>
-  .wrapper {
-    min-height: 100vh;
-    background: linear-gradient(180deg, #FFFFFF 0%, #F2F2F2 100%);
-  }
-</style>
