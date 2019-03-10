@@ -1,8 +1,6 @@
 <template>
   <div class="font-sans text-black wrapper px-8">
-    <AppHeader
-      :links="links"
-      />
+    <AppHeader />
   </div>
 </template>
 
