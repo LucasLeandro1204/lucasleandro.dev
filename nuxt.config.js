@@ -7,13 +7,13 @@ class TailwindExtractor {
   static extract(content) {
     return content.match(/[A-z0-9-:/]+/g) || []
   }
-}
+};
 
 module.exports = {
   mode: 'universal',
 
   sitemap: {
-    hostname: 'https://innboxhostels.com.br',
+    hostname: 'https://lucasleandro.dev',
     generate: true,
     gzip: true,
   },
@@ -22,7 +22,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Lucas Leandro Developer',
+    title: 'Lucas Leandro - Full stack Developer, Florianópolis - Brazil',
 
     htmlAttrs: {
       lang: 'pt-BR',
@@ -31,14 +31,14 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'I\`m a Freelance Developer. I solve problems.', },
+      { hid: 'description', name: 'description', content: 'My name is Lucas Leandro, I\'m a Full Stack Developer from Florianópolis, Santa Catarina - Brazil. I solve problems that others don\'t.', },
       { name: 'msapplication-TileColor', content: '#ffffff' },
       { name: 'msapplication-TileImage', content: '/icon/ms-icon-144x144.png' },
       { name: 'theme-color', content: '#ffffff' },
       { name: 'og:image', content: '/thumbnail.jpg' },
-      { name: 'og:title', content: 'Lucas Leandro Developer' },
+      { name: 'og:title', content: 'Lucas Leandro - Full stack Developer, Florianópolis - Brazil' },
       { name: 'og:description', content: 'I\`m a Freelance Developer. I solve problems.' },
-      { name: 'og:url', content: 'https://lucasleandro1204.netlify.com' },
+      { name: 'og:url', content: 'https://lucasleandro1204.dev' },
       { name: 'og:type', content: 'website', },
     ],
     link: [
@@ -75,6 +75,7 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    //
   ],
 
   /*
