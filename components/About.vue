@@ -1,5 +1,5 @@
 <template>
-  <article class="bg-white mx-auto max-w-lg rounded shadow-lg p-10">
+  <article class="bg-white mx-auto max-w-lg rounded shadow-lg px-10 pt-10 pb-14">
     <Title class="mb-10" title="Who am I, what I do" background="ABOUT" />
 
     <p class="leading-normal">My name Is Lucas Leandro, I'm a Full Stack Developer from Florianópolis, Santa Catarina - Brazil.</p>
