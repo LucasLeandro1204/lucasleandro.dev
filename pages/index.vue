@@ -1,5 +1,5 @@
 <template>
-  <div class="font-sans text-black wrapper">
+  <div class="font-sans text-black wrapper px-8">
     <AppHeader
       :fixed="fixed"
       :links="links"
@@ -23,7 +23,7 @@
       links: () => ({
         '#': 'HOME',
         '#projects': 'PROJECTS',
-        'https://lucasleandro1204.netlify.com/mailto:lucasleandro1204@gmail.com?subject=From Website: Hello Lucas': 'GET IN TOUCH',
+        'mailto:lucasleandro1204@gmail.com?subject=From Website: Hello Lucas': 'GET IN TOUCH',
       }),
     },
   };
