@@ -4,17 +4,19 @@
 
     <About />
 
-
+    <Projects />
   </div>
 </template>
 
 <script>
   import About from '~/components/About';
   import AppHeader from '~/components/Header';
+  import Projects from '~/components/Projects';
 
   export default {
     components: {
       About,
+      Projects,
       AppHeader,
     },
   };
