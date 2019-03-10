@@ -1,6 +1,6 @@
 <template>
   <header class="pt-28">
-    <nav class="w-full fixed pin-t pin-l p-8 bg-white">
+    <nav class="w-full absolute pin-t pin-l p-8 bg-white">
       <div class="max-w-lg mx-auto flex justify-between">
         <img class="w-12 h-12" src="/me.png" alt="Avatar">
 
