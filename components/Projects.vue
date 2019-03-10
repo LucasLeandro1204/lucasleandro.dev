@@ -10,6 +10,7 @@
       class="mt-20"
       v-bind="project"
       :key="project.title"
+      :reverse="index % 2"
       v-for="(project, index) in projects"
       />
   </article>
@@ -31,6 +32,7 @@
       projects: () => ([
         {
           logo: Convertpack,
+          color: 'text-blue',
           title: 'Convertpack',
           link: 'https://convertpack.io',
           background: 'bg-gradient-blue',
@@ -42,6 +44,7 @@
         {
           logo: Innbox,
           title: 'Innbox',
+          color: 'text-green',
           background: 'bg-gradient-green',
           link: 'https://innboxhostels.com.br',
           description: 'Hotel & Hostel website',

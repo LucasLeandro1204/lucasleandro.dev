@@ -1,29 +1,30 @@
 <template>
   <section
-    class="flex rounded shadow-lg h-56"
+    class="flex rounded shadow-lg"
+    :class="{ 'flex-row-reverse': reverse }"
     >
     <div
       :class="background"
-      class="w-1/2 py-16 px-24 rounded-l"
+      class="w-1/2 p-14 flex items-center justify-center relative rounded-l"
       >
-
-      <Component class="w-full h-full" :is="logo" />
+      <Component class="w-full h-32" :is="logo" />
     </div>
 
-    <div class="w-1/2 p-12 bg-white rounded-r flex flex-col">
-      <div>
-        <h3 class="text-3xl mb-2" v-text="title"></h3>
-        <p class="text-grey-darker" v-text="description"></p>
-      </div>
+    <div class="w-1/2 p-14 bg-white rounded-r flex flex-col">
+      <h3 class="text-3xl mb-2" v-text="title"></h3>
+      <p class="text-grey-darker mb-20" v-text="description"></p>
 
-      <div class="mt-auto flex justify-between items-end">
+      <div class="flex justify-between items-end">
         <p class="text-grey-darkest" v-text="stack.join(', ')"></p>
 
         <a
           :href="link"
           target="_blank"
+          :class="color"
+          class="flex items-center"
           >
-          Go to project <ChevronRight class="h-4" />
+          Go to project
+          <ChevronRight class="h-4 ml-1" />
         </a>
       </div>
     </div>
@@ -39,12 +40,22 @@
     },
 
     props: {
+      reverse: {
+        type: Boolean,
+        required: true,
+      },
+
       logo: {
         type: Object,
         required: true,
       },
 
       link: {
+        type: String,
+        required: true,
+      },
+
+      color: {
         type: String,
         required: true,
       },
