@@ -1,14 +1,20 @@
 <template>
   <div class="font-sans text-black wrapper px-8">
     <AppHeader />
+
+    <About />
+
+
   </div>
 </template>
 
 <script>
+  import About from '~/components/About';
   import AppHeader from '~/components/Header';
 
   export default {
     components: {
+      About,
       AppHeader,
     },
   };
