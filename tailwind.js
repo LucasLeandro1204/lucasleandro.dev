@@ -120,13 +120,13 @@ let colors = {
   'purple-lighter': '#d6bbfc',
   'purple-lightest': '#f3ebff',
 
-  'pink-darkest': '#451225',
-  'pink-darker': '#6f213f',
-  'pink-dark': '#eb5286',
-  'pink': '#f66d9b',
-  'pink-light': '#fa7ea8',
-  'pink-lighter': '#ffbbca',
-  'pink-lightest': '#ffebef',
+  // 'pink-darkest': '#451225',
+  // 'pink-darker': '#6f213f',
+  // 'pink-dark': '#eb5286',
+  'pink': '#F7395F',
+  // 'pink-light': '#fa7ea8',
+  // 'pink-lighter': '#ffbbca',
+  // 'pink-lightest': '#ffebef',
 }
 
 module.exports = {
@@ -169,8 +169,11 @@ module.exports = {
   screens: {
     'sm': '576px',
     'md': '768px',
-    'lg': '992px',
-    'xl': '1200px',
+
+    // max-width
+    'lg': '840px',
+    // 'lg': '992px',
+    // 'xl': '1200px',
   },
 
 
@@ -927,10 +930,7 @@ module.exports = {
   */
 
   plugins: [
-    require('tailwindcss/plugins/container')({
-      // center: true,
-      // padding: '1rem',
-    }),
+    //
   ],
 
 
