@@ -1,6 +1,6 @@
 <template>
   <div class="font-sans text-black wrapper px-8">
-    <AppHeader />
+    <AppHeader class="mt-4 mb-16" />
 
     <About />
 
