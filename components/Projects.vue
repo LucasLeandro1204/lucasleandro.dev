@@ -9,7 +9,8 @@
     <Project
       v-bind="project"
       :key="project.title"
-      v-for="project in projects"
+      :class="{ 'mt-8': index > 0 }"
+      v-for="(project, index) in projects"
       />
   </article>
 </template>
