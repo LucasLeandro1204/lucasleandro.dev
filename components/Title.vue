@@ -1,5 +1,5 @@
 <template>
-  <div class="relative text-center">
+  <div :id="background.toLowerCase()" class="relative text-center">
     <span
       v-text="background"
       :class="light ? 'text-white' : 'text-grey-lighter'"

@@ -1,5 +1,5 @@
 <template>
-  <div class="font-sans bg-gradient-white text-black min-h-screen px-8 pb-16">
+  <div class="font-sans text-black min-h-screen px-8 pb-16">
     <AppHeader class="mt-4 mb-16" />
 
     <About class="mb-16" />

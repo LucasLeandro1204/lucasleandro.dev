@@ -1,7 +1,6 @@
 <template>
   <article class="max-w-lg mx-auto">
     <Title
-      light
       title="My Work"
       background="PROJECTS"
       />

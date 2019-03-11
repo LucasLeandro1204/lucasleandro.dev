@@ -4,13 +4,18 @@
     :class="{ 'flex-row-reverse': reverse }"
     >
     <div
-      :class="background"
-      class="w-1/2 p-14 flex items-center justify-center relative rounded-l"
+      :class="[
+        background,
+        reverse ? 'rounded-r' : 'rounded-l',
+      ]"
+      class="w-1/2 p-14 flex items-center justify-center relative"
       >
       <Component class="w-full h-32" :is="logo" />
     </div>
 
-    <div class="w-1/2 p-14 bg-white rounded-r flex flex-col">
+    <div
+      :class="reverse ? 'rounded-l' : 'rounded-r'"
+      class="w-1/2 p-14 bg-white flex flex-col">
       <h3 class="text-3xl mb-2" v-text="title"></h3>
       <p class="text-grey-darker mb-20" v-text="description"></p>
 
