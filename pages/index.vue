@@ -4,7 +4,7 @@
 
     <About class="mb-16" />
 
-    <!-- <Projects /> -->
+    <Projects />
   </div>
 </template>
 

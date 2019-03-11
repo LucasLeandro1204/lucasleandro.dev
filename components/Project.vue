@@ -1,26 +1,28 @@
 <template>
   <section
-    class="flex rounded shadow-lg"
-    :class="{ 'flex-row-reverse': reverse }"
+    class="flex flex-col rounded shadow-lg"
+    :class="reverse ? 'md:flex-row-reverse': 'md:flex-row'"
     >
     <div
       :class="[
         background,
         reverse ? 'rounded-r' : 'rounded-l',
       ]"
-      class="w-1/2 p-14 flex items-center justify-center relative"
+      class="md:w-1/2 p-14 flex items-center justify-center relative"
       >
-      <Component class="w-full h-32" :is="logo" />
+      <Component class="w-full h-28 sm:h-32" :is="logo" />
     </div>
 
     <div
       :class="reverse ? 'rounded-l' : 'rounded-r'"
-      class="w-1/2 p-14 bg-white flex flex-col">
-      <h3 class="text-3xl mb-2" v-text="title"></h3>
-      <p class="text-grey-darker mb-20" v-text="description"></p>
+      class="md:w-1/2 p-6 md:p-14 bg-white flex flex-col"
+      >
 
-      <div class="flex justify-between items-end">
-        <p class="text-grey-darkest" v-text="stack.join(', ')"></p>
+      <h3 class="text-3xl mb-2" v-text="title"></h3>
+      <p class="text-grey-darker mb-10 md:mb-20" v-text="description"></p>
+
+      <div class="flex justify-between flex-col sm:flex-row sm:items-end">
+        <p class="text-grey-darkest mb-2 sm:mb-0" v-text="stack.join(', ')"></p>
 
         <a
           :href="link"
