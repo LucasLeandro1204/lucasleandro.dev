@@ -1,8 +1,15 @@
 <template>
-  <header class="pt-28">
-    <nav class="w-full absolute pin-t pin-l p-8 bg-white">
+  <header id="home" class="pt-28">
+    <nav
+      :class="fixed ? 'p-4' : 'p-8'"
+      class="transition w-full fixed z-20 pin-t pin-l bg-white">
       <div class="max-w-lg mx-auto flex justify-between">
-        <img class="w-12 h-12" src="/me.png" alt="Avatar">
+        <img
+          alt="Avatar"
+          src="/me.png"
+          class="transition"
+          :class="fixed ? 'w-8 h-8' : 'w-12 h-12'"
+          >
 
         <ul class="list-reset flex text-sm items-center">
           <li
@@ -56,15 +63,25 @@
   import IconTwitter from '~/assets/icon/twitter.svg';
 
   export default {
-    // components: {
-    //   IconMail,
-    //   IconGitHub,
-    //   IconTwitter,
-    // },
+    mounted () {
+      const listener = () => {
+        this.fixed = window.scrollY > 0;
+      };
+
+      window.addEventListener('scroll', listener, false);
+
+      this.$once('hook:beforeDestroy', () => {
+        window.removeEventListener('scroll', listener, false);
+      });
+    },
+
+    data: () => ({
+      fixed: true,
+    }),
 
     computed: {
       links: () => ({
-        '#': 'HOME',
+        '#home': 'HOME',
         '#projects': 'PROJECTS',
         'mailto:lucasleandro1204@gmail.com?subject=From Website: Hello Lucas': 'GET IN TOUCH',
       }),
@@ -77,3 +94,9 @@
     },
   };
 </script>
+
+<style scoped>
+  .transition {
+    transition: 300ms;
+  }
+</style>

@@ -9,7 +9,7 @@
       class="mt-20"
       v-bind="project"
       :key="project.title"
-      :reverse="index % 2"
+      :reverse="index % 2 === 1"
       v-for="(project, index) in projects"
       />
   </article>
