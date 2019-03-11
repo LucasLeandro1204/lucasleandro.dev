@@ -47,12 +47,12 @@ let colors = {
   'transparent': 'transparent',
 
   'black': '#22292f',
-  'grey-darkest': '#3d4852',
-  'grey-darker': '#606f7b',
+  'grey-darkest': '#4f4f4f',
+  'grey-darker': '#757677',
   'grey-dark': '#8795a1',
   'grey': '#b8c2cc',
   'grey-light': '#dae1e7',
-  'grey-lighter': '#f1f5f8',
+  'grey-lighter': '#F8F8F8',
   'grey-lightest': '#f8fafc',
   'white': '#ffffff',
 
@@ -92,7 +92,7 @@ let colors = {
   'teal-darker': '#20504f',
   'teal-dark': '#38a89d',
   'teal': '#4dc0b5',
-  'teal-light': '#64d5ca',
+  'teal-light': '#25eae2',
   'teal-lighter': '#a0f0ed',
   'teal-lightest': '#e8fffe',
 
@@ -120,13 +120,13 @@ let colors = {
   'purple-lighter': '#d6bbfc',
   'purple-lightest': '#f3ebff',
 
-  'pink-darkest': '#451225',
-  'pink-darker': '#6f213f',
-  'pink-dark': '#eb5286',
-  'pink': '#f66d9b',
-  'pink-light': '#fa7ea8',
-  'pink-lighter': '#ffbbca',
-  'pink-lightest': '#ffebef',
+  // 'pink-darkest': '#451225',
+  // 'pink-darker': '#6f213f',
+  // 'pink-dark': '#eb5286',
+  'pink': '#F7395F',
+  // 'pink-light': '#fa7ea8',
+  // 'pink-lighter': '#ffbbca',
+  // 'pink-lightest': '#ffebef',
 }
 
 module.exports = {
@@ -169,8 +169,11 @@ module.exports = {
   screens: {
     'sm': '576px',
     'md': '768px',
-    'lg': '992px',
-    'xl': '1200px',
+
+    // max-width
+    'lg': '840px',
+    // 'lg': '992px',
+    // 'xl': '1200px',
   },
 
 
@@ -194,6 +197,7 @@ module.exports = {
 
   fonts: {
     'sans': [
+      'Open Sans',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
@@ -259,6 +263,8 @@ module.exports = {
     '3xl': '1.875rem',  // 30px
     '4xl': '2.25rem',   // 36px
     '5xl': '3rem',      // 48px
+    '6xl': '3.5rem',    // 56px
+    '12xl': '7rem',    // 112px
   },
 
 
@@ -480,6 +486,7 @@ module.exports = {
     '10': '2.5rem',
     '12': '3rem',
     '16': '4rem',
+    '20': '5rem',
     '24': '6rem',
     '32': '8rem',
     '48': '12rem',
@@ -531,6 +538,7 @@ module.exports = {
     '24': '6rem',
     '32': '8rem',
     '48': '12rem',
+    '56': '14rem',
     '64': '16rem',
     'full': '100%',
     'screen': '100vh'
@@ -594,10 +602,11 @@ module.exports = {
   */
 
   maxWidth: {
+    '48': '12rem',
     'xs': '20rem',
     'sm': '30rem',
     'md': '40rem',
-    'lg': '50rem',
+    'lg': '52.5rem',
     'xl': '60rem',
     '2xl': '70rem',
     '3xl': '80rem',
@@ -654,9 +663,11 @@ module.exports = {
     '8': '2rem',
     '10': '2.5rem',
     '12': '3rem',
+    '14': '3.5rem',
     '16': '4rem',
     '20': '5rem',
     '24': '6rem',
+    '28': '7rem',
     '32': '8rem',
   },
 
@@ -692,6 +703,7 @@ module.exports = {
     '16': '4rem',
     '20': '5rem',
     '24': '6rem',
+    '28': '7rem',
     '32': '8rem',
   },
 
@@ -749,7 +761,7 @@ module.exports = {
   shadows: {
     default: '0 2px 4px 0 rgba(0,0,0,0.10)',
     'md': '0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)',
-    'lg': '0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08)',
+    'lg': '0px 32px 64px rgba(158, 158, 158, 0.25);',
     'inner': 'inset 0 2px 4px 0 rgba(0,0,0,0.06)',
     'outline': '0 0 0 3px rgba(52,144,220,0.5)',
     'none': 'none',
@@ -880,12 +892,12 @@ module.exports = {
     height: ['responsive'],
     leading: ['responsive'],
     lists: ['responsive'],
-    margin: ['responsive', 'hover'],
+    margin: ['responsive'],
     maxHeight: ['responsive'],
     maxWidth: ['responsive'],
     minHeight: ['responsive'],
     minWidth: ['responsive'],
-    negativeMargin: ['responsive', 'hover'],
+    negativeMargin: ['responsive'],
     opacity: ['responsive'],
     outline: ['focus'],
     overflow: ['responsive'],
@@ -896,6 +908,7 @@ module.exports = {
     shadows: ['responsive', 'hover', 'focus'],
     svgFill: [],
     svgStroke: [],
+    tableLayout: ['responsive'],
     textAlign: ['responsive'],
     textColors: ['responsive', 'hover', 'focus'],
     textSizes: ['responsive'],
@@ -925,10 +938,24 @@ module.exports = {
   */
 
   plugins: [
-    require('tailwindcss/plugins/container')({
-      // center: true,
-      // padding: '1rem',
-    }),
+    ({ addUtilities }) => {
+      const utilities = {
+        '.bg-gradient-white': {
+          background: 'linear-gradient(180deg, #FFFFFF 0%, #F2F2F2 100%)',
+        },
+        '.bg-gradient-blue': {
+          background: 'radial-gradient(146.50px at 50% 50%, #256EFF 0%, #3D77EA 100%)',
+        },
+        '.bg-gradient-green': {
+          background: 'radial-gradient(146.50px at 50% 50%, #16E35F 0%, #21D05F 100%)',
+        },
+        '.bg-gradient-teal': {
+          background: 'radial-gradient(146.5px at 50% 50%, #51EDE7 0%, #25eae2 100%)',
+        },
+      };
+
+      addUtilities(utilities);
+    },
   ],
 
 

@@ -1,7 +1,7 @@
 {
-  "name": "lucasleandro1204.github.io",
+  "name": "lucasleandro.dev",
   "version": "1.0.0",
-  "description": "Lucas Leandro - Developer Freelance",
+  "description": "My name is Lucas Leandro, I'm a Full Stack Developer from Florianópolis, Santa Catarina - Brazil. I solve problems that others don't.",
   "author": "LucasLeandro1204",
   "private": true,
   "scripts": {
@@ -22,6 +22,7 @@
     "glob-all": "^3.1.0",
     "nodemon": "^1.11.0",
     "purgecss-webpack-plugin": "^1.4.0",
-    "tailwindcss": "~0.6.6"
+    "tailwindcss": "~0.6.6",
+    "vue-svg-loader": "^0.12.0"
   }
 }
