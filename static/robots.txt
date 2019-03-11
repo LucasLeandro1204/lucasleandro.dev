@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://lucasleandro.dev/sitemap.xml
