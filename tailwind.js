@@ -92,7 +92,7 @@ let colors = {
   'teal-darker': '#20504f',
   'teal-dark': '#38a89d',
   'teal': '#4dc0b5',
-  'teal-light': '#64d5ca',
+  'teal-light': '#25eae2',
   'teal-lighter': '#a0f0ed',
   'teal-lightest': '#e8fffe',
 
@@ -602,6 +602,7 @@ module.exports = {
   */
 
   maxWidth: {
+    '48': '12rem',
     'xs': '20rem',
     'sm': '30rem',
     'md': '40rem',
@@ -947,6 +948,9 @@ module.exports = {
         },
         '.bg-gradient-green': {
           background: 'radial-gradient(146.50px at 50% 50%, #16E35F 0%, #21D05F 100%)',
+        },
+        '.bg-gradient-teal': {
+          background: 'radial-gradient(146.5px at 50% 50%, #51EDE7 0%, #25eae2 100%)',
         },
       };
 

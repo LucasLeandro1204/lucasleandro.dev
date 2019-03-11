@@ -10,7 +10,10 @@
       ]"
       class="md:w-1/2 p-14 flex items-center justify-center relative"
       >
-      <Component class="w-full h-28 sm:h-32" :is="logo" />
+
+      <img class="max-w-48" :src="logo" :alt="title" v-if="typeof logo === 'string'">
+
+      <Component class="w-full h-28 sm:h-32 max-w-48" :is="logo" v-else />
     </div>
 
     <div
@@ -21,7 +24,7 @@
       <h3 class="text-3xl mb-2" v-text="title"></h3>
       <p class="text-grey-darker mb-10 md:mb-20" v-text="description"></p>
 
-      <div class="flex justify-between flex-col sm:flex-row sm:items-end">
+      <div class="flex justify-between flex-col sm:flex-row sm:items-end text-sm">
         <p class="text-grey-darkest mb-2 sm:mb-0" v-text="stack.join(', ')"></p>
 
         <a
@@ -53,7 +56,9 @@
       },
 
       logo: {
-        type: Object,
+        type: [
+          String, Object,
+        ],
         required: true,
       },
 
