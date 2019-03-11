@@ -37,7 +37,7 @@ module.exports = {
       { name: 'theme-color', content: '#ffffff' },
       { name: 'og:image', content: '/thumbnail.jpg' },
       { name: 'og:title', content: 'Lucas Leandro - Full Stack Developer, Florianópolis - Brazil' },
-      { name: 'og:description', content: 'I\`m a Freelance Developer. I solve problems.' },
+      { name: 'og:description', content: 'I\'m a Freelance Developer. I solve problems.' },
       { name: 'og:url', content: 'https://lucasleandro1204.dev' },
       { name: 'og:type', content: 'website', },
     ],
