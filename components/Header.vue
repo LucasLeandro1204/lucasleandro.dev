@@ -1,14 +1,15 @@
 <template>
-  <header id="home" class="pt-28">
+  <header id="home" class="pt-20 sm:pt-28">
     <nav
-      :class="fixed ? 'p-4' : 'p-8'"
-      class="transition w-full fixed z-20 pin-t pin-l bg-white">
+      :class="fixed ? 'py-4' : 'py-8'"
+      class="transition w-full fixed z-20 pin-t pin-l bg-white px-8">
+
       <div class="max-w-lg mx-auto flex justify-between">
         <img
           alt="Avatar"
           src="/me.png"
-          class="transition"
-          :class="fixed ? 'w-8 h-8' : 'w-12 h-12'"
+          class="transition w-8 h-8"
+          :class="fixed ? 'sm:w-8 sm:h-8' : 'sm:w-12 sm:h-12'"
           >
 
         <ul class="list-reset flex text-sm items-center">
@@ -29,7 +30,7 @@
       <div class="flex items-center">
         <a
           href="mailto:lucasleandro1204@gmail.com?subject=From Website: Hello Lucas"
-          class="text-pink border border-pink rounded font-bold text-sm px-6 py-3 hover:text-white hover:bg-pink"
+          class="text-pink border border-pink rounded font-bold text-sm px-4 sm:px-6 py-3 hover:text-white hover:bg-pink"
           >
           GET IN TOUCH
         </a>

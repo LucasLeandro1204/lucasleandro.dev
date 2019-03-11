@@ -1,10 +1,10 @@
 <template>
   <div class="font-sans text-black min-h-screen px-8 pb-16">
-    <AppHeader class="mt-4 mb-16" />
+    <AppHeader class="mt-4 mb-12 sm:mb-16" />
 
     <About class="mb-16" />
 
-    <Projects />
+    <!-- <Projects /> -->
   </div>
 </template>
 
