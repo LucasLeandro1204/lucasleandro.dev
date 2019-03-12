@@ -943,14 +943,25 @@ module.exports = {
         '.bg-gradient-white': {
           background: 'linear-gradient(180deg, #FFFFFF 0%, #F2F2F2 100%)',
         },
+
         '.bg-gradient-blue': {
           background: 'radial-gradient(146.50px at 50% 50%, #256EFF 0%, #3D77EA 100%)',
         },
+
         '.bg-gradient-green': {
           background: 'radial-gradient(146.50px at 50% 50%, #16E35F 0%, #21D05F 100%)',
         },
+
         '.bg-gradient-teal': {
           background: 'radial-gradient(146.5px at 50% 50%, #51EDE7 0%, #25eae2 100%)',
+        },
+
+        '.transition': {
+          transition: 'all 0.12s ease-in-out',
+        },
+
+        '.transition-lg': {
+          transition: 'all 0.3s ease-in-out',
         },
       };
 

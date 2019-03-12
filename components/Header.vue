@@ -1,8 +1,8 @@
 <template>
   <header id="home" class="pt-20 sm:pt-28">
     <nav
-      :class="fixed ? 'py-4' : 'py-8'"
-      class="transition w-full fixed z-20 pin-t pin-l bg-white px-8">
+      :class="fixed ? 'py-4 shadow-lg' : 'py-8'"
+      class="transition-lg w-full fixed z-20 pin-t pin-l bg-white px-8">
 
       <div class="max-w-lg mx-auto flex justify-between">
         <img
@@ -18,7 +18,7 @@
             class="ml-6 font-thin"
             v-for="(label, anchor) in links"
             >
-            <a class="text-grey-dark hover:text-pink" :href="anchor" v-text="label"></a>
+            <a class="text-grey-dark hover:text-pink transition" :href="anchor" v-text="label"></a>
           </li>
         </ul>
       </div>
@@ -30,7 +30,7 @@
       <div class="flex items-center">
         <a
           href="mailto:lucasleandro1204@gmail.com?subject=From Website: Hello Lucas"
-          class="text-pink border border-pink rounded font-bold text-sm px-4 sm:px-6 py-3 hover:text-white hover:bg-pink"
+          class="text-pink border border-pink rounded font-bold text-sm px-4 sm:px-6 py-3 transition hover:text-white hover:bg-pink"
           >
           GET IN TOUCH
         </a>
@@ -46,7 +46,7 @@
               <a
                 :href="anchor"
                 target="_blank"
-                class="w-4 block text-black hover:text-pink"
+                class="w-4 block text-black transition hover:text-pink"
                 >
                 <Component class="fill-current" :is="icon" />
               </a>
@@ -95,9 +95,3 @@
     },
   };
 </script>
-
-<style scoped>
-  .transition {
-    transition: 300ms;
-  }
-</style>
