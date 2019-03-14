@@ -77,7 +77,7 @@
     },
 
     data: () => ({
-      fixed: true,
+      fixed: false,
     }),
 
     computed: {
