@@ -88,9 +88,9 @@
       }),
 
       social: () => ({
-        'https://twitter.com/lucasleandro412': IconMail,
+        'mailto:lucasleandro1204@gmail.com?subject=From Website: Hello Lucas': IconMail,
         'https://github.com/lucasleandro1204': IconGitHub,
-        'mailto:lucasleandro1204@gmail.com?subject=From Website: Hello Lucas': IconTwitter,
+        'https://twitter.com/lucasleandro412':IconTwitter,
       }),
     },
   };
