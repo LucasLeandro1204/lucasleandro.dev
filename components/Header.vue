@@ -62,6 +62,7 @@
   import IconMail from '~/assets/icon/mail.svg';
   import IconGitHub from '~/assets/icon/github.svg';
   import IconTwitter from '~/assets/icon/twitter.svg';
+  import IconLinkedin from '~/assets/icon/linkedin.svg';
 
   export default {
     mounted () {
@@ -88,9 +89,10 @@
       }),
 
       social: () => ({
-        'mailto:lucasleandro1204@gmail.com?subject=From Website: Hello Lucas': IconMail,
         'https://github.com/lucasleandro1204': IconGitHub,
-        'https://twitter.com/lucasleandro412':IconTwitter,
+        'https://twitter.com/lucasleandro412': IconTwitter,
+        'https://www.linkedin.com/in/lucasleandro1204/': IconLinkedin,
+        'mailto:lucasleandro1204@gmail.com?subject=From Website: Hello Lucas': IconMail,
       }),
     },
   };
