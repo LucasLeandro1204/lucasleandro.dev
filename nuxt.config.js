@@ -22,7 +22,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Lucas Leandro - Full stack Developer, Florianópolis - Brazil',
+    title: 'Lucas Leandro - Full stack Developer',
 
     htmlAttrs: {
       lang: 'pt-BR',
@@ -35,11 +35,11 @@ module.exports = {
       { name: 'msapplication-TileColor', content: '#ffffff' },
       { name: 'msapplication-TileImage', content: '/icon/ms-icon-144x144.png' },
       { name: 'theme-color', content: '#ffffff' },
-      { name: 'og:image', content: '/thumbnail.jpg' },
-      { name: 'og:title', content: 'Lucas Leandro - Full Stack Developer, Florianópolis - Brazil' },
-      { name: 'og:description', content: 'I\'m a Freelance Developer. I solve problems.' },
-      { name: 'og:url', content: 'https://lucasleandro1204.dev' },
-      { name: 'og:type', content: 'website', },
+      { name: 'image', property: 'og:image', content: '/thumbnail.jpg' },
+      { name: 'title', property: 'og:title', content: 'Lucas Leandro - Full Stack Developer' },
+      { name: 'description', property: 'og:description', content: 'I\'m a Freelance Developer. I solve problems.' },
+      { name: 'url', property: 'og:url', content: 'https://lucasleandro1204.dev' },
+      { name: 'type', property: 'og:type', content: 'website', },
     ],
     link: [
       { rel: 'apple-touch-icon', sizes: '57x57', href: '/icon/apple-icon-57x57.png', },
