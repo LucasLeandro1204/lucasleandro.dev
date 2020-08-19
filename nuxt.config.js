@@ -31,7 +31,7 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'My name is Lucas Leandro, I\'m a Full Stack Developer from Florianópolis, Santa Catarina - Brazil. I solve problems that others don\'t.', },
+      { hid: 'description', name: 'description', content: 'My name is Lucas Leandro, I\'m a Full Stack Developer from Florianópolis, Santa Catarina - Brazil. I solve problems.', },
       { name: 'msapplication-TileColor', content: '#ffffff' },
       { name: 'msapplication-TileImage', content: '/icon/ms-icon-144x144.png' },
       { name: 'theme-color', content: '#ffffff' },
