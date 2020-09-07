@@ -2,7 +2,7 @@
   <header id="home" class="pt-20 sm:pt-28">
     <nav
       :class="fixed ? 'py-4 shadow-lg' : 'py-8'"
-      class="transition-lg w-full fixed z-20 pin-t pin-l bg-white px-8">
+      class="transition-lg w-full fixed z-20 pin-t pin-l bg-secondary-dark px-8">
 
       <div class="max-w-lg mx-auto flex justify-between">
         <img
@@ -18,19 +18,19 @@
             class="ml-6 font-thin"
             v-for="(label, anchor) in links"
             >
-            <a class="text-grey-dark hover:text-pink transition" :href="anchor" v-text="label"></a>
+            <a class="text-white hover:text-primary transition" :href="anchor" v-text="label"></a>
           </li>
         </ul>
       </div>
     </nav>
 
     <div class="max-w-lg mx-auto">
-      <h1 class="text-6xl mb-6">Lucas Leandro</h1>
+      <h1 class="text-6xl text-white mb-6">Lucas Leandro</h1>
 
       <div class="flex items-center">
         <a
           href="mailto:lucasleandro1204@gmail.com?subject=From Website: Hello Lucas"
-          class="text-pink border border-pink rounded font-bold text-sm px-4 sm:px-6 py-3 transition hover:text-white hover:bg-pink"
+          class="text-primary border border-primary rounded font-bold text-sm px-4 sm:px-6 py-3 transition hover:text-white hover:bg-primary"
           >
           GET IN TOUCH
         </a>
@@ -46,7 +46,7 @@
               <a
                 :href="anchor"
                 target="_blank"
-                class="w-4 block text-black transition hover:text-pink"
+                class="w-4 block text-white transition hover:text-primary"
                 >
                 <Component class="fill-current" :is="icon" />
               </a>

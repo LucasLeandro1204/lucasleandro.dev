@@ -54,7 +54,6 @@ let colors = {
   'grey-light': '#dae1e7',
   'grey-lighter': '#F8F8F8',
   'grey-lightest': '#f8fafc',
-  'white': '#ffffff',
 
   'red-darkest': '#3b0d0c',
   'red-darker': '#621b18',
@@ -127,6 +126,15 @@ let colors = {
   // 'pink-light': '#fa7ea8',
   // 'pink-lighter': '#ffbbca',
   // 'pink-lightest': '#ffebef',
+
+  'white': '#ffffff',
+  'primary': '#e94560',
+
+  'secondary': '#0f3460',
+  'secondary-dark': '#16213e',
+  'secondary-darker': '#1a1a2e',
+
+  'userway': '#256EFF',
 }
 
 module.exports = {
@@ -760,8 +768,8 @@ module.exports = {
 
   shadows: {
     default: '0 2px 4px 0 rgba(0,0,0,0.10)',
-    'md': '0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)',
-    'lg': '0px 32px 64px rgba(158, 158, 158, 0.25);',
+    'md': '0px 32px 64px rgba(0,0,0,0.50), 0px 16px 32px rgba(0,0,0,0.25)',
+    'lg': '0px 32px 64px rgba(0, 0, 0, 0.75);',
     'inner': 'inset 0 2px 4px 0 rgba(0,0,0,0.06)',
     'outline': '0 0 0 3px rgba(52,144,220,0.5)',
     'none': 'none',
@@ -946,6 +954,10 @@ module.exports = {
 
         '.bg-gradient-blue': {
           background: 'radial-gradient(146.50px at 50% 50%, #256EFF 0%, #3D77EA 100%)',
+        },
+
+        '.bg-gradient-userway': {
+          background: 'radial-gradient(146.50px at 50% 50%, #256EFF 0%, #1E51FF 100%)',
         },
 
         '.bg-gradient-green': {

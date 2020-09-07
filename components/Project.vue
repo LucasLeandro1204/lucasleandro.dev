@@ -18,20 +18,19 @@
 
     <div
       :class="reverse ? 'rounded-l' : 'rounded-r'"
-      class="md:w-1/2 p-6 md:p-14 bg-white flex flex-col"
+      class="md:w-1/2 p-6 md:p-14 bg-secondary-dark flex flex-col"
       >
 
-      <h3 class="text-3xl mb-2" v-text="title"></h3>
-      <p class="text-grey-darker mb-10 md:mb-20" v-text="description"></p>
+      <h3 class="text-3xl text-white mb-2" v-text="title"></h3>
+      <p class="text-white opacity-75 mb-10 md:mb-20" v-text="description"></p>
 
       <div class="flex justify-between flex-col sm:flex-row sm:items-end text-sm">
-        <p class="text-grey-darkest mb-2 sm:mb-0" v-text="stack.join(', ')"></p>
+        <p class="text-white mb-2 opacity-75 sm:mb-0" v-text="stack.join(', ')"></p>
 
         <a
           :href="link"
           target="_blank"
-          :class="color"
-          class="flex items-center"
+          class="flex text-primary items-center"
           >
           Go to project
           <ChevronRight class="h-4 ml-1" />

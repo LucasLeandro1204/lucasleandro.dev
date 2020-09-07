@@ -3,7 +3,7 @@
     <Title
       title="My Work"
       background="PROJECTS"
-      />
+    />
 
     <Project
       class="mt-20"
@@ -20,6 +20,7 @@
   import Project from './Project';
   import Rdsms from '~/assets/projects/rdsms.svg';
   import Innbox from '~/assets/projects/innbox.svg';
+  import Userway from '~/assets/projects/userway.svg';
   import Bulldesk from '~/assets/projects/bulldesk.png';
   import Convertpack from '~/assets/projects/convertpack.svg';
 
@@ -32,12 +33,12 @@
     computed: {
       projects: () => ([
         {
-          logo: Convertpack,
-          color: 'text-blue',
-          title: 'Convertpack',
-          link: 'https://convertpack.io',
-          background: 'bg-gradient-blue',
-          description: 'A package of tools to boost your sales',
+          logo: Userway,
+          color: 'text-userway',
+          title: 'Userway',
+          link: 'https://userway.io',
+          background: 'bg-gradient-userway',
+          description: 'User onboarding software',
           stack: [
             'Nuxt', 'Laravel', 'Vue',
           ],
@@ -54,14 +55,14 @@
           ],
         },
         {
-          logo: Rdsms,
-          color: 'text-teal-light',
-          title: 'RDSMS',
-          link: 'https://rdsms.com.br/',
-          background: 'bg-gradient-teal',
-          description: 'SMS delivery platform',
+          logo: Convertpack,
+          color: 'text-blue',
+          title: 'Convertpack',
+          link: 'https://convertpack.io',
+          background: 'bg-gradient-blue',
+          description: 'A package of tools to boost your sales',
           stack: [
-            'Laravel', 'Vue',
+            'Nuxt', 'Laravel', 'Vue',
           ],
         },
         {
