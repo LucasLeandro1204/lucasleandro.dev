@@ -7,8 +7,8 @@
       <div class="max-w-lg mx-auto flex justify-between">
         <img
           alt="Avatar"
-          src="/me.png"
-          class="transition w-8 h-8"
+          src="/me.jpg"
+          class="transition rounded-full w-8 h-8"
           :class="fixed ? 'sm:w-8 sm:h-8' : 'sm:w-12 sm:h-12'"
           >
 
