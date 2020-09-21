@@ -131,8 +131,8 @@ let colors = {
   'primary': '#e94560',
 
   'secondary': '#0f3460',
-  'secondary-dark': '#16213e',
-  'secondary-darker': '#1a1a2e',
+  'secondary-dark': '#1a1a2e',
+  'secondary-darker': '#00071b',
 
   'userway': '#256EFF',
 }

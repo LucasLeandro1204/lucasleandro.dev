@@ -1,6 +1,6 @@
 <template>
-  <article class="mx-auto text-white max-w-lg rounded shadow-md px-6 pt-6 pb-8 sm:px-10 sm:pt-10 sm:pb-14">
-    <Title class="mb-10" title="Who am I, what I do" background="ABOUT" />
+  <article class="mx-auto w-full text-white max-w-xl rounded shadow-md px-6 pt-6 pb-8 sm:px-16 sm:pt-12 sm:pb-16">
+    <Title class="mb-10 sm:mb-16" title="Who am I, what I do" background="ABOUT" />
 
     <p class="text-sm sm:text-base leading-loose sm:leading-normal">My name Is Lucas Leandro, I'm a Full Stack Developer from Florianópolis, Santa Catarina - Brazil.</p>
     <p class="text-sm sm:text-base leading-loose sm:leading-normal mb-4 text-primary">I solve problems.</p>

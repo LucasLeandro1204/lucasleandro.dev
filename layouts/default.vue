@@ -1,5 +1,5 @@
 <template>
   <Nuxt
-    class="bg-secondary-dark"
+    class="bg-secondary-darker"
   />
 </template>

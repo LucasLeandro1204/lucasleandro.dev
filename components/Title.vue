@@ -2,7 +2,7 @@
   <div :id="background.toLowerCase()" class="relative text-center">
     <span
       v-text="background"
-      class="text-6xl text-secondary-darker md:text-12xl select-none leading-none font-extrabold"
+      class="text-6xl text-secondary-dark md:text-12xl select-none leading-none font-extrabold"
       >
     </span>
 

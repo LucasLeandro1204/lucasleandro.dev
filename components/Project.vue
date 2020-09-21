@@ -18,7 +18,7 @@
 
     <div
       :class="reverse ? 'rounded-l' : 'rounded-r'"
-      class="md:w-1/2 p-6 md:p-14 bg-secondary-dark flex flex-col"
+      class="md:w-1/2 p-6 md:p-14 bg-secondary-darker flex flex-col"
       >
 
       <h3 class="text-3xl text-white mb-2" v-text="title"></h3>

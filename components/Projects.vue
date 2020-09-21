@@ -1,5 +1,5 @@
 <template>
-  <article class="max-w-lg mx-auto">
+  <article class="max-w-xl mx-auto">
     <Title
       title="My Work"
       background="PROJECTS"

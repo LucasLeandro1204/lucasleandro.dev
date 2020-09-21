@@ -1,10 +1,10 @@
 <template>
-  <header id="home" class="pt-20 sm:pt-28">
+  <header id="home" class="pt-28 sm:pt-32">
     <nav
       :class="fixed ? 'py-4 shadow-lg' : 'py-8'"
-      class="transition-lg w-full fixed z-20 pin-t pin-l bg-secondary-dark px-8">
+      class="transition-lg w-full fixed z-20 pin-t pin-l bg-secondary-darker px-8">
 
-      <div class="max-w-lg mx-auto flex justify-between">
+      <div class="max-w-xl mx-auto flex justify-between">
         <img
           alt="Avatar"
           src="/me.jpg"
@@ -24,7 +24,7 @@
       </div>
     </nav>
 
-    <div class="max-w-lg mx-auto">
+    <div class="max-w-xl mx-auto">
       <h1 class="text-6xl text-white mb-6">Lucas Leandro</h1>
 
       <div class="flex items-center">
