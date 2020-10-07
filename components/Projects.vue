@@ -11,7 +11,7 @@
       :key="project.title"
       :reverse="index % 2 === 1"
       v-for="(project, index) in projects"
-      />
+    />
   </article>
 </template>
 
