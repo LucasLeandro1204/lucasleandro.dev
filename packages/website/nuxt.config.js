@@ -1,8 +1,21 @@
 import { join } from 'path';
 
 const i18n = ['nuxt-i18n', {
-  locales: ['pt-br', 'en'],
-  defaultLocale: 'pt-br',
+  seo: false,
+  baseUrl: process.env.BASE_URL,
+
+  locales: [
+    {
+      code: 'en',
+      iso: 'en-US',
+    },
+    {
+      code: 'br',
+      iso: 'pt-BR',
+      isCatchallLocale: true,
+    },
+  ],
+  defaultLocale: 'br',
   vueI18n: {
     fallbackLocale: 'en',
     messages: {
