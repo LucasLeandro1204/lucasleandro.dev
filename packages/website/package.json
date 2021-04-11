@@ -6,10 +6,13 @@
   "private": true,
   "scripts": {
     "dev": "nuxt dev --config ./nuxt.config.js",
-    "build": "nuxt build --config ./nuxt.config.js",
+    "builds": "nuxt build --config ./nuxt.config.js",
     "start": "nuxt start --config ./nuxt.config.js"
   },
   "devDependencies": {
     "nuxt-vite": "^0.0.36"
+  },
+  "dependencies": {
+    "nuxt-i18n": "^6.24.0"
   }
 }

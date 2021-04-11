@@ -5,11 +5,11 @@
 </template>
 
 <script>
-  import Title from './Title';
+import Title from './Title';
 
-  export default {
-    components: {
-      Title,
-    },
-  };
+export default {
+  components: {
+    Title,
+  },
+};
 </script>

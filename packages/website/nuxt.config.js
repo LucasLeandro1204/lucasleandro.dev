@@ -1,5 +1,21 @@
 import { join } from 'path';
 
+const i18n = ['nuxt-i18n', {
+  locales: ['pt-br', 'en'],
+  defaultLocale: 'pt-br',
+  vueI18n: {
+    fallbackLocale: 'en',
+    messages: {
+      en: {
+        welcome: 'Welcome',
+      },
+      fr: {
+        welcome: 'Bienvenue',
+      },
+    },
+  },
+}];
+
 export default {
   target: 'server',
   srcDir: join(__dirname, './src'),
@@ -10,13 +26,15 @@ export default {
   },
 
   vite: {
-    /* options for vite */
     vue: {
-      /* options for vite-plugin-vue2 */
     },
   },
 
+  modules: [
+    i18n,
+  ],
+
   buildModules: [
-    'nuxt-vite'
+    'nuxt-vite',
   ],
 };

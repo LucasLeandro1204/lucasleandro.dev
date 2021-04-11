@@ -9,13 +9,13 @@ You can install Node using `nvm` or `fnm`.
 
 ```sh
 $ nvm install 14
+$ npm install -g pnpm
 ```
 
 Once you have it running locally, you can proceed to running:
 
 ```sh
 $ pnpm install
-$ pnpm bootstrap
 ```
 
 ## Example commands
@@ -23,9 +23,9 @@ $ pnpm bootstrap
 ### Running the dev command in certain packages
 
 ```sh
-$ pnpm dev --filter @teamwork/ui-kit --filter @teamwork/ui-tailwind-config
+$ pnpm dev --filter @l17s/api --filter @l17s/website
 ```
 
 Package                                | Description
 ---                                    | ---
-`@teamwork/component-generator`        | `(TODO)`
+`@l17s/website`                        | L17S website

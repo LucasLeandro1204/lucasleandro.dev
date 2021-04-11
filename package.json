@@ -5,8 +5,7 @@
   "author": "LucasLeandro1204",
   "private": true,
   "scripts": {
-    "prebuild": "test \"$CI\" = true && npx pnpm install -r --store=node_modules/.pnpm-store",
-    "bootstrap": "pnpm build -r"
+    "bootstrap": "npx pnpm install --store=node_modules/.pnpm-store"
   },
   "devDependencies": {
     "pnpm": "^6.0.1"
