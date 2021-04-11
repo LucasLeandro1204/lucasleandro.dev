@@ -82,5 +82,9 @@ dist
 .idea
 .DS_STORE
 
-
 sitemap.*
+
+# Lock files
+
+package-lock.json
+yarn-lock.json

@@ -1,7 +1,14 @@
 {
-  "name": "lucasleandro.dev",
-  "version": "2.0.0",
-  "description": "My name is Lucas Leandro, I'm a Full Stack Developer from Florianópolis, Santa Catarina - Brazil. I solve problems.",
+  "name": "l17s",
+  "version": "0.0.1",
+  "description": "We are L17S. We solve problems.",
   "author": "LucasLeandro1204",
-  "private": true
+  "private": true,
+  "scripts": {
+    "prebuild": "test \"$CI\" = true && npx pnpm install -r --store=node_modules/.pnpm-store",
+    "bootstrap": "pnpm build -r"
+  },
+  "devDependencies": {
+    "pnpm": "^6.0.1"
+  }
 }

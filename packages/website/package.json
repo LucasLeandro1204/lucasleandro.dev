@@ -1,0 +1,15 @@
+{
+  "name": "@l17s/website",
+  "version": "0.0.1",
+  "description": "L17S website",
+  "author": "LucasLeandro1204",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt dev --config ./nuxt.config.js",
+    "build": "nuxt build --config ./nuxt.config.js",
+    "start": "nuxt start --config ./nuxt.config.js"
+  },
+  "devDependencies": {
+    "nuxt-vite": "^0.0.36"
+  }
+}
