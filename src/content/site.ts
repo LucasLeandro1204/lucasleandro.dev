@@ -63,37 +63,37 @@ export const siteMeta = {
   location: 'Florianópolis, Brazil',
   email: 'lucasleandro1204@gmail.com',
   description:
-    'Senior Software Engineer from Florianópolis, Brazil, focused on frontend architecture, Vue.js, TypeScript, design systems, and AI-enabled SaaS products.',
+    'Senior software engineer focused on complex SaaS interfaces, frontend architecture, design systems, and AI-enabled product platforms.',
 };
 
 export const hero = {
   eyebrow: 'Senior Software Engineer',
-  title: 'Frontend architecture, design systems, and AI-enabled product work.',
+  title: 'I build the complex parts of product software.',
   description:
-    'Senior Software Engineer with 9+ years of experience building SaaS products, design systems, and client-facing platforms across Vue.js, TypeScript, Node.js, PHP, and cloud tooling.',
-  badge: 'Vue.js, TypeScript, AI-enabled products',
+    'Over 9+ years I have shipped reporting, workflow-heavy UI, design systems, and AI-enabled platforms for SaaS teams. My strongest work sits where product clarity, frontend architecture, and reliable delivery all have to hold together.',
+  badge: 'Best fit: senior or staff-level product engineering',
 } satisfies HeroContent;
 
 export const snapshot = {
-  title: 'Product-minded engineering across interface architecture, application logic, and delivery systems.',
+  title: 'Teams usually bring me in when a product surface is getting harder to scale.',
   items: [
-    "Top 10 contributor among 265+ authors on Teamwork's Lightspeed frontend.",
-    'Led delivery of a Vue-based design system with 50+ production components and Storybook documentation.',
-    'Architected a 9-package AI sales platform serving 15+ brands with 20+ integrations.',
+    'Large, stateful interfaces such as reporting, builders, scheduling, exports, and calendar workflows.',
+    'Frontend foundations that need stronger architecture, reusable patterns, and a design system that can survive real product pressure.',
+    'AI-enabled products that still need clean UX, integration discipline, and end-to-end engineering ownership.',
   ],
 } satisfies SnapshotContent;
 
 export const contact = {
-  title: 'Need a senior engineer who can move from product UI to platform architecture without losing delivery quality?',
+  title: 'Hiring for a senior or staff-level engineer who can own product complexity?',
   description:
-    'Reach out if you need help with Vue and TypeScript product work, design systems, reporting or calendar-heavy workflows, or AI-enabled platform delivery.',
+    'I do my best work with SaaS teams that value product judgment, strong frontend architecture, and direct hands-on delivery. If that is the role, send me an email or reach out on LinkedIn.',
 } satisfies ContactContent;
 
 export const mailtoHref = `mailto:${siteMeta.email}?subject=From Website: Hello Lucas`;
 
 export const navLinks = [
   {
-    label: 'Highlights',
+    label: 'Strengths',
     href: '#highlights',
   },
   {
@@ -101,7 +101,7 @@ export const navLinks = [
     href: '#experience',
   },
   {
-    label: 'Work',
+    label: 'Selected Work',
     href: '#work',
   },
   {
@@ -134,33 +134,37 @@ export const stats = [
     value: '9+ years',
   },
   {
-    label: 'Design systems',
+    label: 'Teamwork footprint',
+    value: 'Top 10 / 265+',
+  },
+  {
+    label: 'Design system',
     value: '50+ components',
   },
   {
-    label: 'AI platform rollout',
+    label: 'AI platform',
     value: '15+ brands',
   },
 ] satisfies Stat[];
 
 export const highlights = [
   {
-    title: 'Large-product frontend ownership',
+    title: 'Complex product UI',
     description:
-      'At Teamwork I work inside a large Vue 3 SaaS codebase, owning reporting builders, scheduled exports, data-heavy UI, calendar flows, and performance-focused product improvements.',
-    stack: ['Vue 3', 'TypeScript', 'Reporting', 'Calendar'],
+      'I am comfortable owning the interfaces other teams avoid: report builders, scheduling flows, exports, calendar UX, and other state-heavy product surfaces where clarity and correctness both matter.',
+    stack: ['Reporting', 'Scheduling', 'Calendar', 'Data-heavy UI'],
   },
   {
-    title: 'Design systems built for production',
+    title: 'Frontend architecture that lasts',
     description:
-      'I led delivery of Simer, a Vue-based design system with 50+ production components, Storybook documentation, and interface patterns shaped by analytics-heavy client products.',
-    stack: ['Vue', 'Storybook', 'Design Systems', 'Analytics UI'],
+      'I design reusable patterns, component foundations, and delivery conventions that help a product keep moving without turning the codebase into friction for the team.',
+    stack: ['Vue 3', 'TypeScript', 'Design Systems', 'Performance'],
   },
   {
-    title: 'AI-enabled multi-tenant platforms',
+    title: 'Product range beyond the frontend',
     description:
-      'I architected a confidential sales platform across nine TypeScript packages, supporting OpenAI and Groq orchestration, messaging workflows, infrastructure automation, and 15+ brand namespaces.',
-    stack: ['TypeScript', 'OpenAI', 'Groq', 'Terraform'],
+      'Frontend is the core strength, but I also work comfortably across APIs, integrations, infrastructure, and AI workflows when the product needs end-to-end engineering ownership.',
+    stack: ['Node.js', 'OpenAI', 'Integrations', 'Terraform'],
   },
 ] satisfies Highlight[];
 
@@ -169,11 +173,12 @@ export const experience = [
     company: 'Teamwork',
     role: 'Senior Software Engineer',
     period: 'Nov 2020 - Present',
-    description: 'Modernizing and extending a large SaaS product across reporting, calendar, and performance-sensitive workflows.',
+    description:
+      "Senior engineer on Teamwork's core product, with ownership across reporting, calendar, and frontend modernization inside a large Vue 3 codebase.",
     highlights: [
-      'Helped evolve the core product toward Vue 3 with stronger architecture, maintainability, and usability.',
-      'Owned reporting capabilities across 12 report types, including advanced filters, builders, scheduled reports, and exports.',
-      'Built calendar event flows, task views, popovers, and Google Calendar-related integrations.',
+      'Delivered reporting workflows across 12 report types, including advanced filters, builder UX, scheduled delivery, exports, and data-heavy states.',
+      'Shipped calendar features covering event creation, task views, popovers, and Google Calendar-related workflows.',
+      'Improved maintainability and product speed through reusable patterns, stronger architecture, and performance-focused frontend decisions.',
     ],
     stack: ['Vue 3', 'TypeScript', 'Performance', 'Product Engineering'],
   },
@@ -181,11 +186,12 @@ export const experience = [
     company: 'Flow | Estudio Digital',
     role: 'Software Team Lead',
     period: 'Oct 2019 - Nov 2020',
-    description: 'Led software delivery across multiple client engagements, setting standards, guiding architecture, and shipping production systems.',
+    description:
+      'Led a software team across client products, balancing technical direction with hands-on delivery across architecture, implementation, and release work.',
     highlights: [
-      'Directed technical delivery from planning through deployment across a multi-project client portfolio.',
-      'Delivered products using PHP, WordPress, Node.js, Vue, React, Next.js, and Sass.',
-      'Served as lead developer for Simer, including its component system and Storybook documentation.',
+      'Set technical standards and guided delivery from planning through deployment across multiple parallel engagements.',
+      'Worked across PHP, WordPress, Node.js, Vue, React, Next.js, and Sass depending on the product and client context.',
+      'Served as lead developer for Simer, including the component library, design system patterns, and Storybook documentation.',
     ],
     stack: ['Leadership', 'Vue', 'React', 'Node.js'],
   },
@@ -193,10 +199,11 @@ export const experience = [
     company: 'Freelance',
     role: 'Software Development Contractor',
     period: 'Jun 2018 - Oct 2019',
-    description: 'Built platforms and web interfaces for distributed teams while tightening delivery, CI/CD, and collaboration workflows.',
+    description:
+      'Shipped end-to-end product work for startups and agencies, turning requirements, designs, and evolving business needs into maintainable web applications.',
     highlights: [
-      'Shipped product work for Convertpack, OMD, Innbox, SmartTaylor, Tutormundi, Mensageiro MVP, and Site Illa.',
-      'Turned designs and business requirements into production-ready web apps and interfaces.',
+      'Delivered product work for Convertpack, OMD, Innbox, SmartTaylor, RD SMS, and Site Illa.',
+      'Handled both implementation and delivery improvements, including deployment flow, CI/CD, and collaboration with distributed teams.',
       'Worked across PHP, Node.js, MongoDB, PostgreSQL, MySQL, Vue, React, Nuxt, Next.js, and Linux.',
     ],
     stack: ['Nuxt', 'Next.js', 'PHP', 'Node.js'],
@@ -205,10 +212,11 @@ export const experience = [
     company: 'BulldeskCRM',
     role: 'Software Developer',
     period: 'Aug 2016 - Jun 2018',
-    description: 'Built and maintained CRM product features across the frontend, application layer, and delivery tooling.',
+    description:
+      'Built product features in a growing CRM and developed the engineering fundamentals that still shape how I approach product delivery.',
     highlights: [
-      'Developed product features using Laravel, Vue.js, Sass, Pug, and Webpack.',
-      'Worked on frontend interfaces, server-side logic, debugging workflows, and build automation.',
+      'Built and maintained product features using Laravel, Vue.js, Sass, Pug, and Webpack.',
+      'Worked across frontend interfaces, server-side logic, debugging workflows, and build automation.',
     ],
     stack: ['Laravel', 'Vue', 'Sass', 'Webpack'],
   },
@@ -219,42 +227,31 @@ export const projects = [
     title: 'Confidential AI Sales Platform',
     period: '2024 - 2025',
     description:
-      'Architected a 9-package TypeScript monorepo for AI-assisted sales operations spanning business logic, APIs, backoffice, chat, reporting, database, E2E testing, and infrastructure provisioning.',
+      'Architected a multi-tenant TypeScript platform for AI-assisted sales operations spanning chat, APIs, backoffice tooling, reporting, automated messaging, database layers, E2E coverage, and infrastructure.',
     stack: ['TypeScript', 'OpenAI', 'Groq', 'Terraform', 'AWS'],
     mark: 'AI',
-    accent: '#e94560',
-    gradient: 'linear-gradient(135deg, rgba(233, 69, 96, 0.18), rgba(26, 7, 15, 0.92))',
+    accent: '#c56d54',
+    gradient: 'linear-gradient(135deg, rgba(197, 109, 84, 0.24), rgba(255, 244, 237, 0.94))',
   },
   {
-    title: 'Teamwork Reporting and Calendar',
+    title: 'Teamwork',
     period: '2020 - Present',
     description:
-      'Owned reporting builders, scheduled exports, data-heavy interfaces, and major calendar workflows inside Teamwork’s Lightspeed frontend while contributing to broader product modernization.',
+      "Delivered some of the most complexity-dense product areas inside Teamwork's Lightspeed frontend, including reporting builders, scheduled delivery, data-heavy states, and calendar workflows.",
     stack: ['Vue 3', 'TypeScript', 'Reporting', 'Calendar'],
     mark: 'TW',
-    accent: '#256eff',
-    gradient: 'linear-gradient(135deg, rgba(37, 110, 255, 0.18), rgba(7, 19, 48, 0.92))',
+    accent: '#5a6cd8',
+    gradient: 'linear-gradient(135deg, rgba(90, 108, 216, 0.22), rgba(242, 244, 255, 0.96))',
     link: 'https://www.teamwork.com',
   },
   {
-    title: 'Simer Design System',
+    title: 'UXFlow - Simer Design System',
     period: '2019 - 2020',
     description:
-      'Led delivery of a Vue-based design system with 50+ production components, Storybook documentation, and UI foundations built to support analytics-oriented product work.',
+      'Led delivery of a production design system with 50+ components, Storybook documentation, and UI foundations shaped to support analytics-heavy product work.',
     stack: ['Vue', 'Storybook', 'Design Systems', 'Sass'],
-    mark: 'SM',
-    accent: '#38c172',
-    gradient: 'linear-gradient(135deg, rgba(56, 193, 114, 0.18), rgba(6, 29, 22, 0.94))',
-  },
-  {
-    title: 'vue-content-loading',
-    period: '2017 - Present',
-    description:
-      'Created and maintained an open-source Vue loading-state library while contributing to related Vue and TypeScript community tooling.',
-    stack: ['Vue', 'TypeScript', 'Open Source'],
-    mark: 'OSS',
-    accent: '#f59e0b',
-    gradient: 'linear-gradient(135deg, rgba(245, 158, 11, 0.18), rgba(38, 22, 5, 0.94))',
-    link: 'https://github.com/lucasleandro1204',
+    mark: 'DS',
+    accent: '#5f7c73',
+    gradient: 'linear-gradient(135deg, rgba(95, 124, 115, 0.22), rgba(241, 248, 245, 0.96))',
   },
 ] satisfies Project[];

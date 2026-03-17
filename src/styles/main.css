@@ -1,21 +1,27 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Space Grotesk", "Avenir Next", "Segoe UI", sans-serif;
-  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "Manrope", "Avenir Next", "Segoe UI", sans-serif;
+  --font-display: "Newsreader", Georgia, serif;
 
-  --color-ink-950: #050816;
-  --color-ink-900: #0a1024;
-  --color-ink-800: #111a35;
-  --color-ink-100: #edf2ff;
-  --color-accent: #e94560;
-  --color-signal: #38c172;
-  --color-cobalt: #256eff;
+  --color-paper-50: #f8f4ee;
+  --color-paper-100: #efe7dc;
+  --color-paper-200: #e4d8cb;
+  --color-ink-950: #1d2433;
+  --color-ink-900: #46516a;
+  --color-ink-800: #6b768d;
+  --color-accent: #c56d54;
+  --color-signal: #5f7c73;
+  --color-cobalt: #5a6cd8;
 
-  --shadow-panel: 0 24px 80px rgba(5, 8, 22, 0.42);
+  --shadow-panel: 0 26px 70px rgba(29, 36, 51, 0.08);
 }
 
 @layer base {
+  :root {
+    color-scheme: light;
+  }
+
   html {
     scroll-behavior: smooth;
   }
@@ -23,19 +29,25 @@
   body {
     min-height: 100vh;
     background:
-      radial-gradient(circle at top, rgba(233, 69, 96, 0.14), transparent 30%),
-      radial-gradient(circle at right, rgba(37, 110, 255, 0.12), transparent 28%),
-      linear-gradient(180deg, #081022 0%, #050816 55%, #040611 100%);
-    color: white;
+      radial-gradient(circle at top left, rgba(197, 109, 84, 0.12), transparent 28%),
+      radial-gradient(circle at top right, rgba(95, 124, 115, 0.1), transparent 24%),
+      linear-gradient(180deg, #fbf8f3 0%, #f6f1ea 52%, #f3ede4 100%);
+    color: #1d2433;
+    font-family: var(--font-sans);
     text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
   }
 
   a {
     text-decoration: none;
   }
 
+  img {
+    display: block;
+  }
+
   ::selection {
-    background: rgba(233, 69, 96, 0.45);
-    color: white;
+    background: rgba(197, 109, 84, 0.24);
+    color: #1d2433;
   }
 }

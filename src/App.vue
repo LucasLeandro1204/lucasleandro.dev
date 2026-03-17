@@ -26,6 +26,7 @@ const socialIcons = {
 
 const isScrolled = ref(false);
 const year = computed(() => new Date().getFullYear());
+const linkedinHref = socialLinks.find((link) => link.icon === 'linkedin')?.href ?? '#';
 
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 12;
@@ -42,45 +43,46 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div class="relative overflow-x-hidden">
+  <div class="relative min-h-screen overflow-x-hidden bg-paper-50 text-ink-950">
     <div class="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
-      <div class="absolute left-1/2 top-[-8rem] h-[28rem] w-[28rem] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(233,69,96,0.26),transparent_66%)] blur-3xl" />
-      <div class="absolute right-[-6rem] top-[18rem] h-[24rem] w-[24rem] rounded-full bg-[radial-gradient(circle,rgba(37,110,255,0.18),transparent_72%)] blur-3xl" />
-      <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:72px_72px] [mask-image:radial-gradient(circle_at_top,black,transparent_82%)]" />
+      <div class="absolute left-[-8rem] top-[-10rem] h-[30rem] w-[30rem] rounded-full bg-[radial-gradient(circle,rgba(197,109,84,0.22),transparent_68%)] blur-3xl" />
+      <div class="absolute right-[-8rem] top-[12rem] h-[28rem] w-[28rem] rounded-full bg-[radial-gradient(circle,rgba(95,124,115,0.18),transparent_70%)] blur-3xl" />
+      <div class="absolute left-1/2 top-[32rem] h-[26rem] w-[26rem] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(90,108,216,0.12),transparent_72%)] blur-3xl" />
+      <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(29,36,51,0.045)_1px,transparent_1px),linear-gradient(to_bottom,rgba(29,36,51,0.045)_1px,transparent_1px)] bg-[size:72px_72px] opacity-50 [mask-image:linear-gradient(to_bottom,black,transparent_82%)]" />
     </div>
 
     <header class="fixed inset-x-0 top-0 z-50 px-4 sm:px-6 lg:px-8">
       <div
         :class="[
-          'mx-auto mt-4 flex max-w-6xl items-center justify-between rounded-full border px-4 py-3 transition duration-300 sm:px-6',
+          'mx-auto mt-4 flex max-w-7xl items-center justify-between rounded-full border px-4 py-3 transition duration-300 sm:px-6',
           isScrolled
-            ? 'border-white/[0.12] bg-ink-950/[0.85] shadow-[0_20px_60px_rgba(0,0,0,0.45)] backdrop-blur-xl'
-            : 'border-white/[0.08] bg-white/[0.05] backdrop-blur-md',
+            ? 'border-ink-950/10 bg-paper-50/85 shadow-[0_24px_70px_rgba(29,36,51,0.12)] backdrop-blur-xl'
+            : 'border-transparent bg-white/60 backdrop-blur-md',
         ]"
       >
         <a href="#top" class="flex items-center gap-3">
           <img
             alt="Lucas Leandro"
             src="/me.jpg"
-            class="size-11 rounded-full border border-white/10 object-cover shadow-[0_10px_30px_rgba(0,0,0,0.25)]"
+            class="size-11 rounded-full border border-ink-950/10 object-cover shadow-[0_14px_32px_rgba(29,36,51,0.14)]"
           />
 
           <div class="hidden sm:block">
-            <p class="text-sm font-semibold text-white">
+            <p class="text-sm font-semibold text-ink-950">
               {{ siteMeta.name }}
             </p>
-            <p class="text-xs uppercase tracking-[0.25em] text-white/[0.45]">
+            <p class="text-xs uppercase tracking-[0.26em] text-ink-800/70">
               {{ siteMeta.title }}
             </p>
           </div>
         </a>
 
-        <nav class="hidden items-center gap-8 text-sm text-white/[0.7] md:flex">
+        <nav class="hidden items-center gap-8 text-sm text-ink-900/72 md:flex">
           <a
             v-for="link in navLinks"
             :key="link.href"
             :href="link.href"
-            class="transition hover:text-white"
+            class="transition hover:text-ink-950"
           >
             {{ link.label }}
           </a>
@@ -88,100 +90,99 @@ onBeforeUnmount(() => {
 
         <a
           :href="mailtoHref"
-          class="inline-flex items-center gap-2 rounded-full border border-accent/[0.35] bg-accent/10 px-4 py-2 text-sm font-medium text-white transition hover:border-accent/[0.6] hover:bg-accent/[0.18]"
+          class="inline-flex items-center gap-2 rounded-full bg-ink-950 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-ink-900"
         >
-          Contact
+          Email Lucas
           <ArrowRight class="size-4" />
         </a>
       </div>
     </header>
 
-    <main id="top" class="mx-auto flex w-full max-w-6xl flex-col gap-28 px-4 pb-16 pt-32 sm:px-6 sm:pt-36 lg:gap-36 lg:px-8">
-      <section class="grid gap-10 lg:grid-cols-[minmax(0,1.1fr)_minmax(18rem,28rem)] lg:items-center">
-        <div>
-          <p class="text-sm font-medium uppercase tracking-[0.35em] text-accent/80">
+    <main id="top" class="mx-auto flex w-full max-w-7xl flex-col gap-24 px-4 pb-16 pt-28 sm:px-6 sm:pt-32 lg:gap-32 lg:px-8">
+      <section class="grid gap-8 lg:grid-cols-[minmax(0,1.12fr)_24rem] lg:items-start">
+        <div class="rounded-[2.25rem] border border-ink-950/10 bg-white/78 p-8 shadow-panel backdrop-blur-xl sm:p-10 lg:p-12">
+          <p class="text-xs font-semibold uppercase tracking-[0.34em] text-accent">
             {{ hero.eyebrow }}
           </p>
 
-          <h1 class="mt-6 max-w-4xl font-display text-5xl leading-none text-white sm:text-6xl lg:text-7xl">
-            Lucas Leandro.
-            <span class="mt-4 block font-sans text-xl font-medium leading-9 text-slate-300 sm:text-2xl sm:leading-10">
+          <h1 class="mt-6 max-w-4xl font-display text-5xl leading-[0.94] text-ink-950 sm:text-6xl lg:text-[5.2rem]">
+            {{ siteMeta.name }}
+            <span class="mt-5 block max-w-3xl font-sans text-xl font-medium leading-9 text-ink-900/78 sm:text-2xl sm:leading-10">
               {{ hero.title }}
             </span>
           </h1>
 
-          <div class="mt-8 flex flex-wrap items-center gap-4 text-sm text-white/[0.65]">
-            <span class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.05] px-4 py-2">
+          <p class="mt-8 max-w-3xl text-base leading-8 text-ink-900/78 sm:text-lg">
+            {{ hero.description }}
+          </p>
+
+          <div class="mt-8 flex flex-wrap items-center gap-3 text-sm">
+            <span class="inline-flex items-center gap-2 rounded-full border border-ink-950/10 bg-paper-100 px-4 py-2 text-ink-900/78">
               <MapPin class="size-4 text-accent" />
               {{ siteMeta.location }}
             </span>
 
-            <span class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.05] px-4 py-2">
+            <!-- <span class="inline-flex items-center gap-2 rounded-full border border-accent/15 bg-accent/[0.08] px-4 py-2 text-ink-900/78">
               {{ hero.badge }}
-            </span>
+            </span> -->
           </div>
-
-          <p class="mt-8 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg">
-            {{ hero.description }}
-          </p>
 
           <div class="mt-10 flex flex-wrap gap-4">
             <a
-              href="#experience"
-              class="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-ink-950 transition hover:bg-slate-200"
+              href="#work"
+              class="inline-flex items-center gap-2 rounded-full bg-ink-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-ink-900"
             >
-              View experience
+              View selected work
               <ArrowRight class="size-4" />
             </a>
 
             <a
               :href="mailtoHref"
-              class="inline-flex items-center gap-2 rounded-full border border-white/[0.12] bg-white/[0.04] px-5 py-3 text-sm font-semibold text-white transition hover:border-white/25 hover:bg-white/[0.08]"
+              class="inline-flex items-center gap-2 rounded-full border border-ink-950/12 bg-white px-5 py-3 text-sm font-semibold text-ink-950 transition hover:border-ink-950/20 hover:bg-paper-100"
             >
-              Start a conversation
+              Discuss a role
               <Mail class="size-4" />
             </a>
           </div>
-
-          <div class="mt-12 grid gap-4 sm:grid-cols-3">
-            <article
-              v-for="stat in stats"
-              :key="stat.label"
-              class="rounded-[1.5rem] border border-white/10 bg-white/[0.04] p-5 shadow-panel"
-            >
-              <p class="text-xs uppercase tracking-[0.28em] text-white/[0.45]">
-                {{ stat.label }}
-              </p>
-              <p class="mt-3 text-lg font-semibold text-white">
-                {{ stat.value }}
-              </p>
-            </article>
-          </div>
         </div>
 
-        <aside class="relative">
-          <div class="absolute -inset-6 rounded-[2.5rem] bg-[radial-gradient(circle,rgba(233,69,96,0.14),transparent_68%)] blur-2xl" />
+        <aside class="space-y-4">
+          <article class="rounded-[2rem] border border-ink-950/10 bg-white/82 p-6 shadow-panel backdrop-blur sm:p-7">
+            <div class="flex items-center gap-4">
+              <img
+                src="/me.jpg"
+                alt="Portrait of Lucas Leandro"
+                class="h-20 w-20 rounded-[1.5rem] border border-ink-950/10 object-cover shadow-[0_16px_36px_rgba(29,36,51,0.12)]"
+              />
 
-          <article class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] p-6 shadow-panel backdrop-blur sm:p-8">
-            <div class="absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.4),transparent)]" />
+              <div>
+                <p class="text-lg font-semibold text-ink-950">
+                  {{ siteMeta.name }}
+                </p>
+                <p class="mt-1 text-sm leading-6 text-ink-900/72">
+                  Frontend architecture, design systems, and product engineering for SaaS.
+                </p>
+              </div>
+            </div>
 
-            <img
-              src="/me.jpg"
-              alt="Portrait of Lucas Leandro"
-              class="h-24 w-24 rounded-3xl border border-white/10 object-cover shadow-[0_18px_50px_rgba(0,0,0,0.32)]"
-            />
-
-            <p class="mt-6 text-xs font-medium uppercase tracking-[0.3em] text-white/[0.5]">
-              Snapshot
+            <p class="mt-7 text-xs font-semibold uppercase tracking-[0.3em] text-ink-800/68">
+              Why teams hire me
             </p>
 
-            <h2 class="mt-4 max-w-sm text-3xl font-semibold leading-tight text-white">
+            <h2 class="mt-4 text-3xl font-display leading-tight text-ink-950">
               {{ snapshot.title }}
             </h2>
 
-            <ul class="mt-6 space-y-4 text-sm leading-7 text-slate-300">
-              <li v-for="item in snapshot.items" :key="item">
-                {{ item }}
+            <ul class="mt-6 space-y-4">
+              <li
+                v-for="(item, index) in snapshot.items"
+                :key="item"
+                class="flex gap-4"
+              >
+                <span class="mt-1 inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-accent/[0.10] text-xs font-semibold text-accent">
+                  {{ String(index + 1).padStart(2, '0') }}
+                </span>
+                <span class="text-sm leading-7 text-ink-900/78">{{ item }}</span>
               </li>
             </ul>
 
@@ -190,40 +191,52 @@ onBeforeUnmount(() => {
                 v-for="link in socialLinks"
                 :key="link.label"
                 :href="link.href"
-                :aria-label="link.label"
-                target="_blank"
-                rel="noreferrer"
-                class="inline-flex size-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.05] text-white/[0.8] transition hover:border-white/20 hover:bg-white/[0.1] hover:text-white"
+                :target="link.icon === 'mail' ? undefined : '_blank'"
+                :rel="link.icon === 'mail' ? undefined : 'noreferrer'"
+                class="inline-flex items-center gap-2 rounded-full border border-ink-950/10 bg-paper-50 px-3.5 py-2 text-sm font-medium text-ink-900/78 transition hover:border-ink-950/18 hover:bg-white hover:text-ink-950"
               >
-                <component :is="socialIcons[link.icon]" class="size-[1.125rem]" />
+                <component :is="socialIcons[link.icon]" class="size-4" />
+                {{ link.label }}
               </a>
             </div>
+          </article>
+
+          <article class="rounded-[1.75rem] border border-accent/15 bg-[linear-gradient(135deg,rgba(197,109,84,0.14),rgba(255,255,255,0.92))] p-5 shadow-[0_18px_36px_rgba(29,36,51,0.08)]">
+            <p class="text-xs font-semibold uppercase tracking-[0.3em] text-accent">
+              Role fit
+            </p>
+            <p class="mt-3 text-sm leading-7 text-ink-900/78">
+              Strong fit for senior or staff-level roles in SaaS, platform UI, design systems, reporting-heavy products, workflow tooling, and AI-assisted experiences.
+            </p>
           </article>
         </aside>
       </section>
 
       <section id="highlights" class="space-y-12">
         <SectionHeading
-          eyebrow="Highlights"
-          title="Product work across large SaaS frontends, design systems, and AI-enabled platforms."
-          description="The focus is on maintainable product engineering: complex interfaces, reusable UI foundations, and systems that can keep scaling under real usage."
+          eyebrow="Strengths"
+          title="Where I create the most leverage."
+          description="The common thread is complex product software that needs both UI judgment and engineering discipline."
         />
 
         <div class="grid gap-5 lg:grid-cols-3">
           <article
-            v-for="highlight in highlights"
+            v-for="(highlight, index) in highlights"
             :key="highlight.title"
-            class="rounded-[1.75rem] border border-white/10 bg-white/[0.04] p-6 shadow-panel transition duration-300 hover:border-white/[0.18] hover:bg-white/[0.06] sm:p-7"
+            class="rounded-[1.9rem] border border-ink-950/10 bg-white/78 p-6 shadow-panel transition duration-300 hover:-translate-y-1 hover:border-ink-950/18 sm:p-7"
           >
-            <p class="text-xs font-medium uppercase tracking-[0.28em] text-accent/[0.75]">
-              Focus
-            </p>
+            <div class="flex items-center justify-between gap-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.26em] text-ink-800/62">
+                0{{ index + 1 }}
+              </p>
+              <div class="h-px flex-1 bg-[linear-gradient(90deg,rgba(197,109,84,0.4),rgba(29,36,51,0))]" />
+            </div>
 
-            <h3 class="mt-4 text-2xl font-semibold text-white">
+            <h3 class="mt-5 text-2xl font-semibold text-ink-950">
               {{ highlight.title }}
             </h3>
 
-            <p class="mt-4 text-sm leading-7 text-slate-300">
+            <p class="mt-4 text-sm leading-7 text-ink-900/78">
               {{ highlight.description }}
             </p>
 
@@ -231,7 +244,7 @@ onBeforeUnmount(() => {
               <span
                 v-for="item in highlight.stack"
                 :key="item"
-                class="rounded-full border border-white/10 bg-white/[0.05] px-3 py-1.5 text-xs font-medium text-white/[0.7]"
+                class="rounded-full border border-ink-950/10 bg-paper-100 px-3 py-1.5 text-xs font-medium text-ink-900/76"
               >
                 {{ item }}
               </span>
@@ -243,55 +256,54 @@ onBeforeUnmount(() => {
       <section id="experience" class="space-y-12">
         <SectionHeading
           eyebrow="Experience"
-          title="Experience spanning SaaS product engineering, technical leadership, client delivery, and CRM platforms."
-          description="Roles across Teamwork, Flow, freelance work, and BulldeskCRM built a track record across implementation, architecture, and end-to-end delivery."
+          title="A track record across product companies, client delivery, and technical leadership."
+          description="The through-line is ownership: from shipping features to shaping the systems behind them."
         />
 
-        <div class="grid gap-5 lg:grid-cols-2">
+        <div class="space-y-5">
           <article
             v-for="item in experience"
             :key="`${item.company}-${item.period}`"
-            class="rounded-[1.75rem] border border-white/10 bg-white/[0.04] p-6 shadow-panel sm:p-7"
+            class="rounded-[2rem] border border-ink-950/10 bg-white/78 p-6 shadow-panel sm:p-8"
           >
-            <div class="flex flex-col gap-5">
-              <div class="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
-                <div>
-                  <p class="text-xs font-medium uppercase tracking-[0.3em] text-accent/[0.75]">
-                    {{ item.company }}
-                  </p>
-                  <h3 class="mt-3 text-2xl font-semibold text-white">
-                    {{ item.role }}
-                  </h3>
-                </div>
-
-                <p class="text-xs uppercase tracking-[0.24em] text-white/[0.45]">
+            <div class="grid gap-6 lg:grid-cols-[13rem_minmax(0,1fr)] lg:gap-8">
+              <div class="space-y-3">
+                <p class="text-xs font-semibold uppercase tracking-[0.28em] text-accent">
+                  {{ item.company }}
+                </p>
+                <h3 class="text-2xl font-semibold text-ink-950">
+                  {{ item.role }}
+                </h3>
+                <p class="text-sm leading-7 text-ink-800/72">
                   {{ item.period }}
                 </p>
               </div>
 
-              <p class="text-sm leading-7 text-slate-300">
-                {{ item.description }}
-              </p>
+              <div class="space-y-6">
+                <p class="text-base leading-8 text-ink-900/78">
+                  {{ item.description }}
+                </p>
 
-              <ul class="space-y-3 text-sm leading-7 text-slate-300">
-                <li
-                  v-for="point in item.highlights"
-                  :key="point"
-                  class="flex gap-3"
-                >
-                  <span class="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-accent/80" />
-                  <span>{{ point }}</span>
-                </li>
-              </ul>
+                <ul class="space-y-3 text-sm leading-7 text-ink-900/78">
+                  <li
+                    v-for="point in item.highlights"
+                    :key="point"
+                    class="flex gap-3"
+                  >
+                    <span class="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+                    <span>{{ point }}</span>
+                  </li>
+                </ul>
 
-              <div class="flex flex-wrap gap-2">
-                <span
-                  v-for="entry in item.stack"
-                  :key="entry"
-                  class="rounded-full border border-white/10 bg-white/[0.05] px-3 py-1.5 text-xs font-medium text-white/[0.7]"
-                >
-                  {{ entry }}
-                </span>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    v-for="entry in item.stack"
+                    :key="entry"
+                    class="rounded-full border border-ink-950/10 bg-paper-100 px-3 py-1.5 text-xs font-medium text-ink-900/76"
+                  >
+                    {{ entry }}
+                  </span>
+                </div>
               </div>
             </div>
           </article>
@@ -301,8 +313,8 @@ onBeforeUnmount(() => {
       <section id="work" class="space-y-12">
         <SectionHeading
           eyebrow="Selected Work"
-          title="Selected work in product modernization, design systems, AI sales infrastructure, and open source."
-          description="A few representative projects that show the range of product surfaces, architecture, and delivery depth behind the broader experience."
+          title="Representative work across SaaS product engineering, design systems, and AI-enabled platforms."
+          description="These projects show range, but also consistency in the type of problems I solve best."
         />
 
         <div class="grid gap-6 lg:grid-cols-2">
@@ -315,35 +327,66 @@ onBeforeUnmount(() => {
         </div>
       </section>
 
-      <section id="contact" class="rounded-[2rem] border border-white/10 bg-[linear-gradient(135deg,rgba(255,255,255,0.08),rgba(255,255,255,0.02))] p-8 shadow-panel sm:p-10">
-        <div class="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
+      <section
+        id="contact"
+        class="relative overflow-hidden rounded-[2.25rem] border border-ink-950/10 bg-[linear-gradient(135deg,rgba(255,255,255,0.94),rgba(236,228,216,0.92))] p-8 shadow-panel sm:p-10 lg:p-12"
+      >
+        <div class="pointer-events-none absolute right-[-4rem] top-[-4rem] h-40 w-40 rounded-full bg-[radial-gradient(circle,rgba(95,124,115,0.18),transparent_72%)] blur-2xl" />
+
+        <div class="relative flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
           <div class="max-w-3xl">
-            <p class="text-xs font-medium uppercase tracking-[0.35em] text-white/[0.5]">
+            <p class="text-xs font-semibold uppercase tracking-[0.35em] text-ink-800/68">
               Contact
             </p>
 
-            <h2 class="mt-5 font-display text-4xl leading-tight text-white sm:text-5xl">
+            <h2 class="mt-5 max-w-2xl font-display text-4xl leading-tight text-ink-950 sm:text-5xl">
               {{ contact.title }}
             </h2>
 
-            <p class="mt-5 max-w-2xl text-base leading-8 text-slate-300">
+            <p class="mt-5 max-w-2xl text-base leading-8 text-ink-900/78">
               {{ contact.description }}
             </p>
+
+            <div class="mt-6 flex flex-wrap gap-3">
+              <a
+                v-for="link in socialLinks"
+                :key="link.label"
+                :href="link.href"
+                :target="link.icon === 'mail' ? undefined : '_blank'"
+                :rel="link.icon === 'mail' ? undefined : 'noreferrer'"
+                class="inline-flex items-center gap-2 rounded-full border border-ink-950/10 bg-white/70 px-3.5 py-2 text-sm font-medium text-ink-900/78 transition hover:border-ink-950/18 hover:bg-white hover:text-ink-950"
+              >
+                <component :is="socialIcons[link.icon]" class="size-4" />
+                {{ link.label }}
+              </a>
+            </div>
           </div>
 
-          <a
-            :href="mailtoHref"
-            class="inline-flex items-center justify-center gap-2 rounded-full bg-accent px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-[#ff5876]"
-          >
-            lucasleandro1204@gmail.com
-            <ArrowRight class="size-4" />
-          </a>
+          <div class="flex flex-wrap gap-3">
+            <a
+              :href="mailtoHref"
+              class="inline-flex items-center justify-center gap-2 rounded-full bg-ink-950 px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-ink-900"
+            >
+              lucasleandro1204@gmail.com
+              <ArrowRight class="size-4" />
+            </a>
+
+            <a
+              :href="linkedinHref"
+              target="_blank"
+              rel="noreferrer"
+              class="inline-flex items-center justify-center gap-2 rounded-full border border-ink-950/12 bg-white/80 px-6 py-3.5 text-sm font-semibold text-ink-950 transition hover:border-ink-950/18 hover:bg-white"
+            >
+              LinkedIn
+              <ArrowRight class="size-4" />
+            </a>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="mx-auto flex w-full max-w-6xl flex-col gap-4 px-4 pb-8 text-sm text-white/[0.45] sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
-      <p>&copy; {{ year }} {{ siteMeta.name }}. Built with Vue, Vite SSG, Tailwind CSS v4, and TypeScript.</p>
+    <footer class="mx-auto flex w-full max-w-7xl flex-col gap-3 px-4 pb-8 text-sm text-ink-800/72 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+      <p>&copy; {{ year }} {{ siteMeta.name }}.</p>
       <p>{{ siteMeta.location }}</p>
     </footer>
   </div>
