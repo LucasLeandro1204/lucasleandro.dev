@@ -205,8 +205,8 @@ onBeforeUnmount(() => {
       <section id="highlights" class="space-y-12">
         <SectionHeading
           eyebrow="Highlights"
-          title="The updated resume points to three consistent strengths: large-product ownership, design systems, and AI-enabled delivery."
-          description="The current positioning is less about generic full-stack breadth and more about the specific product work that has defined the last several years."
+          title="Product work across large SaaS frontends, design systems, and AI-enabled platforms."
+          description="The focus is on maintainable product engineering: complex interfaces, reusable UI foundations, and systems that can keep scaling under real usage."
         />
 
         <div class="grid gap-5 lg:grid-cols-3">
@@ -243,8 +243,8 @@ onBeforeUnmount(() => {
       <section id="experience" class="space-y-12">
         <SectionHeading
           eyebrow="Experience"
-          title="The career path moves from implementation into product ownership, architecture, and team-level delivery."
-          description="The newer resume adds stronger context around scale: modern SaaS work at Teamwork, design-system leadership, multi-client delivery, and early CRM product engineering."
+          title="Experience spanning SaaS product engineering, technical leadership, client delivery, and CRM platforms."
+          description="Roles across Teamwork, Flow, freelance work, and BulldeskCRM built a track record across implementation, architecture, and end-to-end delivery."
         />
 
         <div class="grid gap-5 lg:grid-cols-2">
@@ -301,8 +301,8 @@ onBeforeUnmount(() => {
       <section id="work" class="space-y-12">
         <SectionHeading
           eyebrow="Selected Work"
-          title="The featured work now matches the resume instead of the older client-project snapshot."
-          description="These entries emphasize the most representative work: product modernization at Teamwork, design-system leadership, a confidential AI platform, and open-source Vue tooling."
+          title="Selected work in product modernization, design systems, AI sales infrastructure, and open source."
+          description="A few representative projects that show the range of product surfaces, architecture, and delivery depth behind the broader experience."
         />
 
         <div class="grid gap-6 lg:grid-cols-2">
