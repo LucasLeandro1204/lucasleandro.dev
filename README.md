@@ -1,3 +1,3 @@
-# Lucas Leandro
+# lucasleandro.dev
 
-> Sempre tentando ser melhor, e não o melhor.
+I solve problems.

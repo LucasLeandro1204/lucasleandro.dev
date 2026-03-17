@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", "Avenir Next", "Segoe UI", sans-serif;
+  --font-display: "Fraunces", Georgia, serif;
+
+  --color-ink-950: #050816;
+  --color-ink-900: #0a1024;
+  --color-ink-800: #111a35;
+  --color-ink-100: #edf2ff;
+  --color-accent: #e94560;
+  --color-signal: #38c172;
+  --color-cobalt: #256eff;
+
+  --shadow-panel: 0 24px 80px rgba(5, 8, 22, 0.42);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    min-height: 100vh;
+    background:
+      radial-gradient(circle at top, rgba(233, 69, 96, 0.14), transparent 30%),
+      radial-gradient(circle at right, rgba(37, 110, 255, 0.12), transparent 28%),
+      linear-gradient(180deg, #081022 0%, #050816 55%, #040611 100%);
+    color: white;
+    text-rendering: optimizeLegibility;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  ::selection {
+    background: rgba(233, 69, 96, 0.45);
+    color: white;
+  }
+}

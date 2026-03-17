@@ -1,0 +1,134 @@
+{
+  "\u0000vite/modulepreload-polyfill.js": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "../../../../me.jpg": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "assets/projects/bulldesk.png": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "assets/projects/convertpack.svg": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "assets/projects/innbox.svg": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "assets/projects/userway.svg": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "index.html": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "node_modules/.pnpm/@unhead+vue@2.1.12_vue@3.5.30_typescript@5.9.3_/node_modules/@unhead/vue/dist/client.mjs": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "node_modules/.pnpm/@unhead+vue@2.1.12_vue@3.5.30_typescript@5.9.3_/node_modules/@unhead/vue/dist/shared/vue.Cr7xSEtD.mjs": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "node_modules/.pnpm/@vue+reactivity@3.5.30/node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "node_modules/.pnpm/@vue+runtime-core@3.5.30/node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "node_modules/.pnpm/@vue+runtime-dom@3.5.30/node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "node_modules/.pnpm/@vue+shared@3.5.30/node_modules/@vue/shared/dist/shared.esm-bundler.js": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "node_modules/.pnpm/hookable@6.1.0/node_modules/hookable/dist/index.mjs": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "node_modules/.pnpm/lucide-vue-next@0.577.0_vue@3.5.30_typescript@5.9.3_/node_modules/lucide-vue-next/dist/esm/Icon.js": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "node_modules/.pnpm/lucide-vue-next@0.577.0_vue@3.5.30_typescript@5.9.3_/node_modules/lucide-vue-next/dist/esm/createLucideIcon.js": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "node_modules/.pnpm/lucide-vue-next@0.577.0_vue@3.5.30_typescript@5.9.3_/node_modules/lucide-vue-next/dist/esm/defaultAttributes.js": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "node_modules/.pnpm/lucide-vue-next@0.577.0_vue@3.5.30_typescript@5.9.3_/node_modules/lucide-vue-next/dist/esm/icons/arrow-right.js": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "node_modules/.pnpm/lucide-vue-next@0.577.0_vue@3.5.30_typescript@5.9.3_/node_modules/lucide-vue-next/dist/esm/icons/arrow-up-right.js": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "node_modules/.pnpm/lucide-vue-next@0.577.0_vue@3.5.30_typescript@5.9.3_/node_modules/lucide-vue-next/dist/esm/icons/github.js": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "node_modules/.pnpm/lucide-vue-next@0.577.0_vue@3.5.30_typescript@5.9.3_/node_modules/lucide-vue-next/dist/esm/icons/linkedin.js": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "node_modules/.pnpm/lucide-vue-next@0.577.0_vue@3.5.30_typescript@5.9.3_/node_modules/lucide-vue-next/dist/esm/icons/mail.js": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "node_modules/.pnpm/lucide-vue-next@0.577.0_vue@3.5.30_typescript@5.9.3_/node_modules/lucide-vue-next/dist/esm/icons/map-pin.js": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "node_modules/.pnpm/lucide-vue-next@0.577.0_vue@3.5.30_typescript@5.9.3_/node_modules/lucide-vue-next/dist/esm/icons/twitter.js": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "node_modules/.pnpm/lucide-vue-next@0.577.0_vue@3.5.30_typescript@5.9.3_/node_modules/lucide-vue-next/dist/esm/shared/src/utils/hasA11yProp.js": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "node_modules/.pnpm/lucide-vue-next@0.577.0_vue@3.5.30_typescript@5.9.3_/node_modules/lucide-vue-next/dist/esm/shared/src/utils/isEmptyString.js": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "node_modules/.pnpm/lucide-vue-next@0.577.0_vue@3.5.30_typescript@5.9.3_/node_modules/lucide-vue-next/dist/esm/shared/src/utils/mergeClasses.js": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "node_modules/.pnpm/lucide-vue-next@0.577.0_vue@3.5.30_typescript@5.9.3_/node_modules/lucide-vue-next/dist/esm/shared/src/utils/toCamelCase.js": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "node_modules/.pnpm/lucide-vue-next@0.577.0_vue@3.5.30_typescript@5.9.3_/node_modules/lucide-vue-next/dist/esm/shared/src/utils/toKebabCase.js": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "node_modules/.pnpm/lucide-vue-next@0.577.0_vue@3.5.30_typescript@5.9.3_/node_modules/lucide-vue-next/dist/esm/shared/src/utils/toPascalCase.js": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "node_modules/.pnpm/unhead@2.1.12/node_modules/unhead/dist/client.mjs": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "node_modules/.pnpm/unhead@2.1.12/node_modules/unhead/dist/shared/unhead.B5FWS6X0.mjs": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "node_modules/.pnpm/unhead@2.1.12/node_modules/unhead/dist/shared/unhead.CbpEuj3y.mjs": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "node_modules/.pnpm/unhead@2.1.12/node_modules/unhead/dist/shared/unhead.Ct24BOby.mjs": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "node_modules/.pnpm/unhead@2.1.12/node_modules/unhead/dist/shared/unhead.yem5I2v_.mjs": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "node_modules/.pnpm/vite-ssg@28.3.0_unhead@2.1.12_vite@7.3.1_jiti@2.6.1_lightningcss@1.31.1_terser@5.46.1__vue@3.5.30_typescript@5.9.3_/node_modules/vite-ssg/dist/client/single-page.mjs": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "node_modules/.pnpm/vite-ssg@28.3.0_unhead@2.1.12_vite@7.3.1_jiti@2.6.1_lightningcss@1.31.1_terser@5.46.1__vue@3.5.30_typescript@5.9.3_/node_modules/vite-ssg/dist/shared/vite-ssg.C6pK7rvr.mjs": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "node_modules/.pnpm/vite-ssg@28.3.0_unhead@2.1.12_vite@7.3.1_jiti@2.6.1_lightningcss@1.31.1_terser@5.46.1__vue@3.5.30_typescript@5.9.3_/node_modules/vite-ssg/dist/shared/vite-ssg.ETIvV-80.mjs": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "src/App.vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "src/components/ProjectCard.vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "src/components/SectionHeading.vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "src/content/site.ts": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "src/main.ts": [
+    "/assets/innbox-PvrCimrS.svg"
+  ],
+  "src/styles/main.css": [
+    "/assets/innbox-PvrCimrS.svg"
+  ]
+}

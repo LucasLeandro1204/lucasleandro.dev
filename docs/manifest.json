@@ -1,5 +1,10 @@
 {
- "name": "LucasLeandro",
+ "name": "Lucas Leandro",
+ "short_name": "Lucas",
+ "start_url": "/",
+ "display": "standalone",
+ "background_color": "#050816",
+ "theme_color": "#050816",
  "icons": [
   {
    "src": "\/icon\/android-icon-36x36.png",
