@@ -9,12 +9,12 @@ defineProps<{
 </script>
 
 <template>
-  <article class="group rounded-[1.6rem] border border-ink-950/8 bg-white p-4 shadow-card transition duration-300 hover:-translate-y-1 hover:border-ink-950/12">
+  <article class="group rounded-[1.6rem] border border-ink-950/10 bg-paper-50/92 p-4 shadow-card transition duration-300 hover:-translate-y-1 hover:border-ink-950/16">
     <div
-      class="rounded-[1.3rem] border border-ink-950/8 p-3"
+      class="rounded-[1.3rem] border border-ink-950/10 p-3"
       :style="{ background: project.surface }"
     >
-      <div class="flex items-center justify-between gap-4 font-mono text-[10px] uppercase tracking-[0.28em] text-ink-800/58">
+      <div class="flex items-center justify-between gap-4 font-mono text-[10px] uppercase tracking-[0.28em] text-ink-800/76">
         <span class="inline-flex items-center gap-2">
           <span
             class="size-2 rounded-full"
@@ -26,7 +26,7 @@ defineProps<{
         <span>{{ project.period }}</span>
       </div>
 
-      <div class="mt-3 overflow-hidden rounded-[1rem] border border-white/70 bg-white/82 shadow-[0_18px_36px_rgba(23,22,20,0.06)]">
+      <div class="mt-3 overflow-hidden rounded-[1rem] border border-ink-950/10 bg-paper-100/92">
         <img
           :src="project.preview"
           :alt="`${project.title} preview`"
@@ -41,7 +41,7 @@ defineProps<{
           {{ project.title }}
         </h3>
 
-        <p class="mt-3 text-sm leading-7 text-ink-900/76">
+        <p class="mt-3 text-sm leading-7 text-ink-900/88">
           {{ project.description }}
         </p>
       </div>
@@ -52,7 +52,7 @@ defineProps<{
         :aria-label="`Visit ${project.title}`"
         target="_blank"
         rel="noreferrer"
-        class="inline-flex size-11 shrink-0 items-center justify-center rounded-full border border-ink-950/10 bg-paper-50 text-ink-950 transition hover:border-ink-950/16 hover:bg-white"
+        class="inline-flex size-11 shrink-0 items-center justify-center rounded-full border border-ink-950/10 bg-paper-100 text-ink-950 transition hover:border-ink-950/18 hover:bg-paper-50"
       >
         <ArrowUpRight class="size-4" />
       </a>
@@ -62,7 +62,7 @@ defineProps<{
       <span
         v-for="item in project.stack"
         :key="item"
-        class="rounded-full border border-ink-950/8 bg-paper-50 px-3 py-1.5 text-[11px] font-medium text-ink-900/72"
+        class="rounded-full border border-ink-950/10 bg-paper-100 px-3 py-1.5 text-[11px] font-medium text-ink-900/82"
       >
         {{ item }}
       </span>

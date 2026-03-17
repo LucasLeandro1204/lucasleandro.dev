@@ -6,23 +6,23 @@
   --font-display: "Source Serif 4", Georgia, serif;
   --font-mono: "IBM Plex Mono", "SFMono-Regular", monospace;
 
-  --color-paper-50: #faf7f1;
-  --color-paper-100: #f1ebe1;
-  --color-paper-200: #ded6cb;
-  --color-ink-950: #171614;
-  --color-ink-900: #34302b;
-  --color-ink-800: #6f685f;
-  --color-accent: #c06d4d;
-  --color-signal: #64806f;
-  --color-cobalt: #6074d9;
+  --color-paper-50: #15191f;
+  --color-paper-100: #1e242c;
+  --color-paper-200: #0c0f13;
+  --color-ink-950: #f7f1e7;
+  --color-ink-900: #e4dbd0;
+  --color-ink-800: #b3ab9f;
+  --color-accent: #f29d79;
+  --color-signal: #8bc8aa;
+  --color-cobalt: #89a0ff;
 
-  --shadow-shell: 0 42px 110px rgba(23, 22, 20, 0.12);
-  --shadow-card: 0 20px 48px rgba(23, 22, 20, 0.06);
+  --shadow-shell: 0 18px 42px rgba(0, 0, 0, 0.18);
+  --shadow-card: 0 10px 24px rgba(0, 0, 0, 0.12);
 }
 
 @layer base {
   :root {
-    color-scheme: light;
+    color-scheme: dark;
   }
 
   html {
@@ -32,10 +32,10 @@
   body {
     min-height: 100vh;
     background:
-      radial-gradient(circle at top left, rgba(192, 109, 77, 0.1), transparent 24%),
-      radial-gradient(circle at top right, rgba(100, 128, 111, 0.08), transparent 22%),
-      linear-gradient(180deg, #d9d2c8 0%, #ebe5dc 42%, #f6f2eb 100%);
-    color: #171614;
+      radial-gradient(circle at top left, rgba(242, 157, 121, 0.12), transparent 24%),
+      radial-gradient(circle at top right, rgba(139, 200, 170, 0.09), transparent 22%),
+      linear-gradient(180deg, #0d1015 0%, #11161d 40%, #0b0e12 100%);
+    color: #f7f1e7;
     font-family: var(--font-sans);
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -54,8 +54,8 @@
   }
 
   ::selection {
-    background: rgba(192, 109, 77, 0.2);
-    color: #171614;
+    background: rgba(242, 157, 121, 0.28);
+    color: #f7f1e7;
   }
 }
 

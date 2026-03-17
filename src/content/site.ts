@@ -117,8 +117,8 @@ export const metrics = [
   },
   {
     value: '12',
-    label: 'Report types owned',
-    detail: 'Builders, filters, scheduled delivery, exports, and related UX.',
+    label: 'Complex features ownership',
+    detail: 'Builders, filters, OLAP, scheduled delivery, exports, and related UX.',
   },
   {
     value: '15+',
@@ -176,7 +176,7 @@ export const projects = [
     stack: ['Vue 3', 'TypeScript', 'Reporting', 'Calendar'],
     preview: teamworkPreview,
     accent: '#6074d9',
-    surface: 'linear-gradient(145deg, rgba(96, 116, 217, 0.18), rgba(244, 246, 255, 0.98))',
+    surface: 'linear-gradient(145deg, rgba(96, 116, 217, 0.22), rgba(23, 27, 37, 0.98))',
     link: 'https://www.teamwork.com',
   },
   {
@@ -188,7 +188,7 @@ export const projects = [
     stack: ['TypeScript', 'OpenAI', 'Groq', 'Terraform'],
     preview: aiPlatformPreview,
     accent: '#c06d4d',
-    surface: 'linear-gradient(145deg, rgba(192, 109, 77, 0.18), rgba(255, 246, 242, 0.98))',
+    surface: 'linear-gradient(145deg, rgba(192, 109, 77, 0.22), rgba(33, 24, 21, 0.98))',
   },
   {
     kind: 'Design system',
@@ -199,7 +199,7 @@ export const projects = [
     stack: ['Vue', 'Storybook', 'Design Systems', 'Sass'],
     preview: designSystemPreview,
     accent: '#64806f',
-    surface: 'linear-gradient(145deg, rgba(100, 128, 111, 0.18), rgba(244, 249, 246, 0.98))',
+    surface: 'linear-gradient(145deg, rgba(100, 128, 111, 0.22), rgba(22, 29, 27, 0.98))',
   },
 ] satisfies Project[];
 
