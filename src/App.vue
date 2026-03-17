@@ -122,9 +122,9 @@ onBeforeUnmount(() => {
               {{ siteMeta.location }}
             </span>
 
-            <!-- <span class="inline-flex items-center gap-2 rounded-full border border-accent/15 bg-accent/[0.08] px-4 py-2 text-ink-900/78">
+            <span class="inline-flex items-center gap-2 rounded-full border border-accent/15 bg-accent/[0.08] px-4 py-2 text-ink-900/78">
               {{ hero.badge }}
-            </span> -->
+            </span>
           </div>
 
           <div class="mt-10 flex flex-wrap gap-4">

@@ -234,7 +234,7 @@ export const projects = [
     gradient: 'linear-gradient(135deg, rgba(197, 109, 84, 0.24), rgba(255, 244, 237, 0.94))',
   },
   {
-    title: 'Teamwork ',
+    title: 'Teamwork Reporting & Calendar',
     period: '2020 - Present',
     description:
       "Delivered some of the most complexity-dense product areas inside Teamwork's Lightspeed frontend, including reporting builders, scheduled delivery, data-heavy states, and calendar workflows.",
