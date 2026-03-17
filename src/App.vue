@@ -1,14 +1,25 @@
 <script setup lang="ts">
-import { ArrowRight, Github, Linkedin, Mail, MapPin, Twitter } from 'lucide-vue-next';
+import { ArrowRight, Github, Linkedin, Mail, MapPin } from 'lucide-vue-next';
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue';
 
 import ProjectCard from '@/components/ProjectCard.vue';
 import SectionHeading from '@/components/SectionHeading.vue';
-import { capabilities, mailtoHref, navLinks, projects, siteMeta, socialLinks, stats } from '@/content/site';
+import {
+  contact,
+  experience,
+  hero,
+  highlights,
+  mailtoHref,
+  navLinks,
+  projects,
+  siteMeta,
+  snapshot,
+  socialLinks,
+  stats,
+} from '@/content/site';
 
 const socialIcons = {
   github: Github,
-  twitter: Twitter,
   linkedin: Linkedin,
   mail: Mail,
 } as const;
@@ -89,13 +100,13 @@ onBeforeUnmount(() => {
       <section class="grid gap-10 lg:grid-cols-[minmax(0,1.1fr)_minmax(18rem,28rem)] lg:items-center">
         <div>
           <p class="text-sm font-medium uppercase tracking-[0.35em] text-accent/80">
-            Full-stack developer
+            {{ hero.eyebrow }}
           </p>
 
           <h1 class="mt-6 max-w-4xl font-display text-5xl leading-none text-white sm:text-6xl lg:text-7xl">
             Lucas Leandro.
             <span class="mt-4 block font-sans text-xl font-medium leading-9 text-slate-300 sm:text-2xl sm:leading-10">
-              Sharp interfaces, dependable backends, and static-first delivery for products that need to feel fast and human.
+              {{ hero.title }}
             </span>
           </h1>
 
@@ -106,20 +117,20 @@ onBeforeUnmount(() => {
             </span>
 
             <span class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.05] px-4 py-2">
-              I solve problems.
+              {{ hero.badge }}
             </span>
           </div>
 
           <p class="mt-8 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg">
-            I work across Vue and React on the front end, Laravel and Node.js on the back end, and the supporting systems needed to keep products stable as they grow.
+            {{ hero.description }}
           </p>
 
           <div class="mt-10 flex flex-wrap gap-4">
             <a
-              href="#work"
+              href="#experience"
               class="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-ink-950 transition hover:bg-slate-200"
             >
-              View selected work
+              View experience
               <ArrowRight class="size-4" />
             </a>
 
@@ -165,13 +176,13 @@ onBeforeUnmount(() => {
             </p>
 
             <h2 class="mt-4 max-w-sm text-3xl font-semibold leading-tight text-white">
-              Product-minded engineering across the interface, application, and delivery layers.
+              {{ snapshot.title }}
             </h2>
 
             <ul class="mt-6 space-y-4 text-sm leading-7 text-slate-300">
-              <li>Front-end work centered on Vue, React, and CSS systems that feel intentional.</li>
-              <li>Back-end experience spanning Laravel, Node.js, Express, Koa, and Adonis.</li>
-              <li>Database and testing discipline aimed at stability instead of heroics after release.</li>
+              <li v-for="item in snapshot.items" :key="item">
+                {{ item }}
+              </li>
             </ul>
 
             <div class="mt-8 flex flex-wrap gap-3">
@@ -191,17 +202,17 @@ onBeforeUnmount(() => {
         </aside>
       </section>
 
-      <section id="capabilities" class="space-y-12">
+      <section id="highlights" class="space-y-12">
         <SectionHeading
-          eyebrow="Capabilities"
-          title="From landing pages to product workflows, the work spans the whole stack."
-          description="The original site talked about frontend, backend, databases, and testing separately. The rebuild keeps that structure, but presents it in a cleaner, more current way."
+          eyebrow="Highlights"
+          title="The updated resume points to three consistent strengths: large-product ownership, design systems, and AI-enabled delivery."
+          description="The current positioning is less about generic full-stack breadth and more about the specific product work that has defined the last several years."
         />
 
         <div class="grid gap-5 lg:grid-cols-3">
           <article
-            v-for="capability in capabilities"
-            :key="capability.title"
+            v-for="highlight in highlights"
+            :key="highlight.title"
             class="rounded-[1.75rem] border border-white/10 bg-white/[0.04] p-6 shadow-panel transition duration-300 hover:border-white/[0.18] hover:bg-white/[0.06] sm:p-7"
           >
             <p class="text-xs font-medium uppercase tracking-[0.28em] text-accent/[0.75]">
@@ -209,16 +220,16 @@ onBeforeUnmount(() => {
             </p>
 
             <h3 class="mt-4 text-2xl font-semibold text-white">
-              {{ capability.title }}
+              {{ highlight.title }}
             </h3>
 
             <p class="mt-4 text-sm leading-7 text-slate-300">
-              {{ capability.description }}
+              {{ highlight.description }}
             </p>
 
             <div class="mt-6 flex flex-wrap gap-2">
               <span
-                v-for="item in capability.stack"
+                v-for="item in highlight.stack"
                 :key="item"
                 class="rounded-full border border-white/10 bg-white/[0.05] px-3 py-1.5 text-xs font-medium text-white/[0.7]"
               >
@@ -229,11 +240,69 @@ onBeforeUnmount(() => {
         </div>
       </section>
 
+      <section id="experience" class="space-y-12">
+        <SectionHeading
+          eyebrow="Experience"
+          title="The career path moves from implementation into product ownership, architecture, and team-level delivery."
+          description="The newer resume adds stronger context around scale: modern SaaS work at Teamwork, design-system leadership, multi-client delivery, and early CRM product engineering."
+        />
+
+        <div class="grid gap-5 lg:grid-cols-2">
+          <article
+            v-for="item in experience"
+            :key="`${item.company}-${item.period}`"
+            class="rounded-[1.75rem] border border-white/10 bg-white/[0.04] p-6 shadow-panel sm:p-7"
+          >
+            <div class="flex flex-col gap-5">
+              <div class="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+                <div>
+                  <p class="text-xs font-medium uppercase tracking-[0.3em] text-accent/[0.75]">
+                    {{ item.company }}
+                  </p>
+                  <h3 class="mt-3 text-2xl font-semibold text-white">
+                    {{ item.role }}
+                  </h3>
+                </div>
+
+                <p class="text-xs uppercase tracking-[0.24em] text-white/[0.45]">
+                  {{ item.period }}
+                </p>
+              </div>
+
+              <p class="text-sm leading-7 text-slate-300">
+                {{ item.description }}
+              </p>
+
+              <ul class="space-y-3 text-sm leading-7 text-slate-300">
+                <li
+                  v-for="point in item.highlights"
+                  :key="point"
+                  class="flex gap-3"
+                >
+                  <span class="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-accent/80" />
+                  <span>{{ point }}</span>
+                </li>
+              </ul>
+
+              <div class="flex flex-wrap gap-2">
+                <span
+                  v-for="entry in item.stack"
+                  :key="entry"
+                  class="rounded-full border border-white/10 bg-white/[0.05] px-3 py-1.5 text-xs font-medium text-white/[0.7]"
+                >
+                  {{ entry }}
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section id="work" class="space-y-12">
         <SectionHeading
           eyebrow="Selected Work"
-          title="A compact portfolio, rebuilt with a stronger visual system and the same core project story."
-          description="The original site only surfaced a few highlights. This version keeps that curated feel, adds more structure, and gives each project room to breathe."
+          title="The featured work now matches the resume instead of the older client-project snapshot."
+          description="These entries emphasize the most representative work: product modernization at Teamwork, design-system leadership, a confidential AI platform, and open-source Vue tooling."
         />
 
         <div class="grid gap-6 lg:grid-cols-2">
@@ -254,11 +323,11 @@ onBeforeUnmount(() => {
             </p>
 
             <h2 class="mt-5 font-display text-4xl leading-tight text-white sm:text-5xl">
-              Need a developer who can move from visual polish to application architecture without dropping quality?
+              {{ contact.title }}
             </h2>
 
             <p class="mt-5 max-w-2xl text-base leading-8 text-slate-300">
-              Reach out and tell me what needs to ship. I work best on products that care about performance, clarity, and maintainable delivery.
+              {{ contact.description }}
             </p>
           </div>
 

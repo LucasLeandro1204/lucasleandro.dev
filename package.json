@@ -1,7 +1,7 @@
 {
   "name": "lucasleandro.dev",
   "version": "1.0.0",
-  "description": "My name is Lucas Leandro, I'm a Full Stack Developer from Florianópolis, Santa Catarina - Brazil. I solve problems.",
+  "description": "Senior Software Engineer from Florianópolis, Brazil, focused on frontend architecture, Vue.js, TypeScript, design systems, and AI-enabled SaaS products.",
   "author": "LucasLeandro1204",
   "private": true,
   "packageManager": "pnpm@10.30.0",

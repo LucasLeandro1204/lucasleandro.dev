@@ -20,7 +20,9 @@ defineProps<{
 
     <div class="relative flex h-full flex-col gap-6">
       <div class="overflow-hidden rounded-[1.5rem] border border-white/10 p-6 sm:p-8" :style="{ background: project.gradient }">
-        <img :src="project.logo" :alt="`${project.title} logo`" class="max-h-14 w-auto object-contain sm:max-h-16" />
+        <p class="font-display text-4xl font-semibold tracking-[0.2em] text-white/90 sm:text-5xl">
+          {{ project.mark }}
+        </p>
       </div>
 
       <div class="space-y-4">
@@ -32,9 +34,13 @@ defineProps<{
             <h3 class="mt-3 text-2xl font-semibold text-white">
               {{ project.title }}
             </h3>
+            <p class="mt-2 text-xs uppercase tracking-[0.24em] text-white/[0.42]">
+              {{ project.period }}
+            </p>
           </div>
 
           <a
+            v-if="project.link"
             :href="project.link"
             :aria-label="`Visit ${project.title}`"
             target="_blank"
