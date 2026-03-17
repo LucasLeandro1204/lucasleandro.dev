@@ -234,7 +234,7 @@ export const projects = [
     gradient: 'linear-gradient(135deg, rgba(197, 109, 84, 0.24), rgba(255, 244, 237, 0.94))',
   },
   {
-    title: 'Teamwork',
+    title: 'Teamwork ',
     period: '2020 - Present',
     description:
       "Delivered some of the most complexity-dense product areas inside Teamwork's Lightspeed frontend, including reporting builders, scheduled delivery, data-heavy states, and calendar workflows.",
@@ -245,7 +245,7 @@ export const projects = [
     link: 'https://www.teamwork.com',
   },
   {
-    title: 'UXFlow - Simer Design System',
+    title: 'Simer Design System',
     period: '2019 - 2020',
     description:
       'Led delivery of a production design system with 50+ components, Storybook documentation, and UI foundations shaped to support analytics-heavy product work.',
@@ -253,5 +253,16 @@ export const projects = [
     mark: 'DS',
     accent: '#5f7c73',
     gradient: 'linear-gradient(135deg, rgba(95, 124, 115, 0.22), rgba(241, 248, 245, 0.96))',
+  },
+  {
+    title: 'vue-content-loading',
+    period: '2017 - Present',
+    description:
+      'Built and maintained an open-source Vue loading-state library as part of a broader pattern of shipping polished frontend tooling, not only internal product code.',
+    stack: ['Vue', 'TypeScript', 'Open Source'],
+    mark: 'OSS',
+    accent: '#c79734',
+    gradient: 'linear-gradient(135deg, rgba(199, 151, 52, 0.22), rgba(255, 249, 235, 0.96))',
+    link: 'https://github.com/lucasleandro1204',
   },
 ] satisfies Project[];
