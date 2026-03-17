@@ -1,28 +1,30 @@
 {
   "name": "lucasleandro.dev",
   "version": "1.0.0",
-  "description": "My name is Lucas Leandro, I'm a Full Stack Developer from Florianópolis, Santa Catarina - Brazil. I solve problems.",
+  "description": "Senior Software Engineer from Florianópolis, Brazil, focused on frontend architecture, Vue.js, TypeScript, design systems, and AI-enabled SaaS products.",
   "author": "LucasLeandro1204",
   "private": true,
+  "packageManager": "pnpm@10.30.0",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
-    "build": "nuxt build --out docs",
-    "start": "cross-env NODE_ENV=production node server/index.js",
-    "generate": "nuxt generate && mv dist docs"
-  },
-  "dependencies": {
-    "cross-env": "^5.2.0",
-    "nuxt": "^2.0.0",
-    "koa": "^2.5.2"
+    "dev": "vite",
+    "build": "pnpm typecheck && vite-ssg build",
+    "preview": "vite preview",
+    "typecheck": "vue-tsc --noEmit"
   },
   "devDependencies": {
-    "@nuxtjs/google-analytics": "^2.0.2",
-    "@nuxtjs/sitemap": "^0.2.0",
-    "autoprefixer": "^8.6.4",
-    "glob-all": "^3.1.0",
-    "nodemon": "^1.11.0",
-    "purgecss-webpack-plugin": "^1.4.0",
-    "tailwindcss": "~0.6.6",
-    "vue-svg-loader": "^0.12.0"
+    "@tailwindcss/vite": "^4.2.0",
+    "@vitejs/plugin-vue": "^6.0.0",
+    "tailwindcss": "^4.2.0",
+    "typescript": "^5.9.0",
+    "vite": "^7.1.0",
+    "vite-ssg": "^28.1.0",
+    "vue": "^3.5.0",
+    "vue-tsc": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "dependencies": {
+    "lucide-vue-next": "^0.577.0"
   }
 }
