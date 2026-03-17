@@ -1,22 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap");
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Manrope", "Avenir Next", "Segoe UI", sans-serif;
-  --font-display: "Newsreader", "Iowan Old Style", Georgia, serif;
+  --font-sans: "Space Grotesk", "Avenir Next", "Segoe UI", sans-serif;
+  --font-display: "Source Serif 4", Georgia, serif;
   --font-mono: "IBM Plex Mono", "SFMono-Regular", monospace;
 
-  --color-paper-50: #f7f2e9;
-  --color-paper-100: #ede5d8;
-  --color-paper-200: #d9ddd7;
-  --color-ink-950: #121519;
-  --color-ink-900: #313742;
-  --color-ink-800: #676f7b;
-  --color-accent: #c56d54;
-  --color-signal: #6f9687;
-  --color-cobalt: #5a6cd8;
+  --color-paper-50: #faf7f1;
+  --color-paper-100: #f1ebe1;
+  --color-paper-200: #ded6cb;
+  --color-ink-950: #171614;
+  --color-ink-900: #34302b;
+  --color-ink-800: #6f685f;
+  --color-accent: #c06d4d;
+  --color-signal: #64806f;
+  --color-cobalt: #6074d9;
 
-  --shadow-frame: 0 38px 110px rgba(18, 21, 25, 0.14);
-  --shadow-card: 0 24px 56px rgba(18, 21, 25, 0.08);
+  --shadow-shell: 0 42px 110px rgba(23, 22, 20, 0.12);
+  --shadow-card: 0 20px 48px rgba(23, 22, 20, 0.06);
 }
 
 @layer base {
@@ -31,10 +32,10 @@
   body {
     min-height: 100vh;
     background:
-      radial-gradient(circle at top left, rgba(197, 109, 84, 0.14), transparent 24%),
-      radial-gradient(circle at top right, rgba(111, 150, 135, 0.12), transparent 20%),
-      linear-gradient(180deg, #d9ddd7 0%, #ece6dc 36%, #f4efe6 100%);
-    color: #121519;
+      radial-gradient(circle at top left, rgba(192, 109, 77, 0.1), transparent 24%),
+      radial-gradient(circle at top right, rgba(100, 128, 111, 0.08), transparent 22%),
+      linear-gradient(180deg, #d9d2c8 0%, #ebe5dc 42%, #f6f2eb 100%);
+    color: #171614;
     font-family: var(--font-sans);
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -49,12 +50,12 @@
   }
 
   section[id] {
-    scroll-margin-top: 7rem;
+    scroll-margin-top: 6rem;
   }
 
   ::selection {
-    background: rgba(197, 109, 84, 0.22);
-    color: #121519;
+    background: rgba(192, 109, 77, 0.2);
+    color: #171614;
   }
 }
 
@@ -67,7 +68,7 @@
 @keyframes rise {
   from {
     opacity: 0;
-    transform: translateY(22px);
+    transform: translateY(20px);
   }
 
   to {

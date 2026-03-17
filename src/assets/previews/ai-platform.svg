@@ -1,0 +1,31 @@
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" rx="40" fill="#FFF5F1"/>
+  <rect x="36" y="36" width="728" height="56" rx="18" fill="#FFFFFF" stroke="#F0D7CD"/>
+  <circle cx="72" cy="64" r="8" fill="#FFB4A3"/>
+  <circle cx="98" cy="64" r="8" fill="#FFD87A"/>
+  <circle cx="124" cy="64" r="8" fill="#A4D1B1"/>
+  <rect x="168" y="50" width="168" height="28" rx="14" fill="#FFF0EA"/>
+  <rect x="600" y="50" width="120" height="28" rx="14" fill="#C06D4D"/>
+  <rect x="36" y="120" width="222" height="344" rx="28" fill="#FFFFFF" stroke="#F0D7CD"/>
+  <rect x="286" y="120" width="478" height="152" rx="28" fill="#FFFFFF" stroke="#F0D7CD"/>
+  <rect x="286" y="296" width="228" height="168" rx="28" fill="#FFFFFF" stroke="#F0D7CD"/>
+  <rect x="536" y="296" width="228" height="168" rx="28" fill="#FFFFFF" stroke="#F0D7CD"/>
+  <rect x="64" y="150" width="88" height="18" rx="9" fill="#F8E6DF"/>
+  <rect x="64" y="190" width="166" height="52" rx="18" fill="#FFF4F0"/>
+  <rect x="80" y="208" width="104" height="14" rx="7" fill="#C06D4D" fill-opacity="0.24"/>
+  <rect x="64" y="260" width="166" height="52" rx="18" fill="#FFF4F0"/>
+  <rect x="80" y="278" width="118" height="14" rx="7" fill="#C06D4D" fill-opacity="0.24"/>
+  <rect x="64" y="330" width="166" height="52" rx="18" fill="#FFF4F0"/>
+  <rect x="80" y="348" width="132" height="14" rx="7" fill="#C06D4D" fill-opacity="0.24"/>
+  <rect x="64" y="400" width="118" height="18" rx="9" fill="#F8E6DF"/>
+  <rect x="316" y="152" width="124" height="18" rx="9" fill="#F8E6DF"/>
+  <rect x="316" y="192" width="128" height="52" rx="18" fill="#FFF4F0"/>
+  <rect x="462" y="192" width="128" height="52" rx="18" fill="#FFF4F0"/>
+  <rect x="608" y="192" width="126" height="52" rx="18" fill="#FFF4F0"/>
+  <rect x="316" y="326" width="168" height="18" rx="9" fill="#F8E6DF"/>
+  <path d="M316 404H484" stroke="#F0D7CD" stroke-width="10" stroke-linecap="round"/>
+  <path d="M316 372C342 360 366 352 392 352C420 352 446 360 484 392" stroke="#C06D4D" stroke-width="12" stroke-linecap="round"/>
+  <rect x="566" y="326" width="122" height="18" rx="9" fill="#F8E6DF"/>
+  <rect x="566" y="364" width="168" height="20" rx="10" fill="#FFF4F0"/>
+  <rect x="566" y="398" width="120" height="20" rx="10" fill="#FFF4F0"/>
+</svg>
